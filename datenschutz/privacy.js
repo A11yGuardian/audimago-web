@@ -51,7 +51,6 @@ function render(code) {
   selector.parentElement.firstChild.textContent = `${text.language} `;
   const article = document.querySelector('#policy');
   article.innerHTML = `<h1>${text.title}</h1>
-    <p class="notice">${text.draft}</p>
     <h2>${text.controller}</h2>
     <p>Silke Poelmann<br>Sonnenstraße 6<br>26842 Ostrhauderfehn<br>${country}<br><a href="mailto:support@audimago.com">support@audimago.com</a></p>
     <h2>${text.appTitle}</h2><p>${text.app}</p>
