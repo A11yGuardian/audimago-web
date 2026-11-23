@@ -6,7 +6,8 @@
 | Datei | Herkunft |
 | --- | --- |
 | `assets/kalino-icon.png` (360 px), `assets/favicon.png` (96 px) | Verkleinerte Kopien des Kalino-App-Icons `apps/wichtel-advent/assets/icons/icon.png` aus dem Projekt „Wichtels Adventskalender" (Paket `Wichtels_Adventskalender_App_Icons_FINAL`, 23.11.2026, von der Rechteinhaberin bereitgestellt). Das Bild wurde nach ihrer Angabe mit ChatGPT erstellt; die Herkunftsangaben und die Hinweise zur kommerziellen Nutzung stehen in `apps/wichtel-advent/assets/branding/PROVENANCE.md` des App-Repositorys. |
-| `assets/icons/lock.svg`, `music.svg`, `hints.svg`, `gamepad.svg`, `door-star.svg` | Aus der Icon-Familie der Kalino-App (`apps/wichtel-advent/src/appIcons.ts`, dort als „selbst gezeichnete Vektoren, keine fremden Ressourcen" dokumentiert), unverändert als SVG-Dateien ausgegeben. |
+| `assets/icons/lock.svg`, `music.svg`, `hints.svg`, `gamepad.svg`, `globe.svg`, `progress.svg` | Aus der Icon-Familie der Kalino-App (`apps/wichtel-advent/src/appIcons.ts`, dort als „selbst gezeichnete Vektoren, keine fremden Ressourcen" dokumentiert), unverändert als SVG-Dateien ausgegeben. |
+| `assets/icons/door-24.svg` | Eigene Abwandlung des App-Symbols `door-star`: Tür im selben Stil und in denselben Farben, statt des Sterns die Zahl 24 (eigene Zeichnung vom 23.11.2026). |
 | `assets/icons/mail.svg` | Aus der Icon-Familie der Kalino-App (`appIcons.mail`), unverändert als SVG-Datei ausgegeben. |
 | `assets/icons/privacy.svg` | Eigene Zeichnung vom 23.11.2026 im Stil und in den Farben derselben Icon-Familie; keine externe Quelle. |
 | `assets/icons/snowglobe.svg` | Eigene Zeichnung vom 23.11.2026 im Stil und in den Farben derselben Icon-Familie; keine externe Quelle. |
@@ -27,3 +28,9 @@ Das Karussell bleibt verborgen, solange `screenshots/manifest.json` keine Eintr�
 ```
 
 `width` und `height` (Pixel) verhindern Sprünge beim Laden. Nach dem Eintrag erscheint der Bereich „Einblicke" automatisch.
+
+## Sprachen der Startseite
+
+`i18n.js` enthält die Texte der Startseite in elf Sprachen (de, en, fr, es, nl, pt-PT, it, pl, da, sv, nb). Die Sprache kommt aus `?lang=`, danach aus der letzten Auswahl (Browser-Speicher `kalino-lang`), sonst aus der Browsersprache, sonst Englisch. Deutsch steht zusätzlich im HTML. Die Bildunterschriften des Karussells stehen unter `s1` bis `s7`, in der Reihenfolge der Bilder in `screenshots/manifest.json`.
+
+Hinweis: Die Übersetzungen wurden mit KI erstellt und nicht von Muttersprachlerinnen oder Muttersprachlern geprüft. Vor der Veröffentlichung gegenlesen lassen.

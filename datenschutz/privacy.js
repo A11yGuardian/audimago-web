@@ -40,7 +40,20 @@ for (const [code, [legalTitle, legal]] of Object.entries(legalDetails)) Object.a
 
 const selector = document.querySelector('#language');
 const requested = new URLSearchParams(location.search).get('lang');
-const current = requested == null ? 'de' : Object.hasOwn(translations, requested) ? requested : 'en';
+const matchLang = tag => {
+  const l = String(tag || '').toLowerCase();
+  if (l.startsWith('pt')) return 'pt-PT';
+  if (l.startsWith('nb') || l.startsWith('no') || l.startsWith('nn')) return 'nb';
+  const base = l.split('-')[0];
+  return Object.hasOwn(translations, base) ? base : null;
+};
+function initialLanguage() {
+  if (requested != null) return Object.hasOwn(translations, requested) ? requested : 'en';
+  try { const saved = localStorage.getItem('kalino-lang'); if (saved && Object.hasOwn(translations, saved)) return saved; } catch (e) {}
+  for (const tag of navigator.languages || [navigator.language]) { const m = matchLang(tag); if (m) return m; }
+  return 'en';
+}
+const current = initialLanguage();
 
 function render(code) {
   const text = translations[code];
@@ -62,6 +75,7 @@ function render(code) {
 
 render(current);
 selector.addEventListener('change', () => {
+  try { localStorage.setItem('kalino-lang', selector.value); } catch (e) {}
   const url = new URL(location.href);
   url.searchParams.set('lang', selector.value);
   history.replaceState(null, '', url);

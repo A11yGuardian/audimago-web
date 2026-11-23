@@ -93,7 +93,7 @@ footer a { color: var(--muted); }
 .sec { margin: 0 0 1.1rem; font-family: var(--display); font-weight: 800; font-size: clamp(1.6rem, 4.5vw, 2.2rem); line-height: 1.15; letter-spacing: -.01em; }
 .intro p { margin: 0 0 .9rem; color: var(--ink); } .intro p:last-child { margin: 0; }
 .intro { margin-bottom: 1.2rem; padding: clamp(1.4rem, 3vw, 2rem) clamp(1.4rem, 4vw, 2.4rem); font-size: 1.1rem; }
-.grid { display: grid; gap: 1.1rem; grid-template-columns: repeat(3, 1fr); }
+.grid { display: grid; gap: 1.1rem; grid-template-columns: repeat(4, 1fr); }
 .grid.two { grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
 .feature svg, .device svg { box-sizing: content-box; width: 2.2rem; height: 2.2rem; padding: .7rem; border-radius: 1.1rem; color: #2a1a00; background: var(--gold); box-shadow: 0 .5rem 1rem #e3b45e55; margin-bottom: .8rem; }
 .feature h3, .device h3 { margin: 0 0 .3rem; font-family: var(--display); font-size: 1.15rem; line-height: 1.25; }
@@ -151,7 +151,7 @@ footer a { color: var(--muted); }
 .langs { list-style: none; padding: 0; margin: 1.1rem 0 0; display: grid; gap: .8rem; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); }
 .langs li { display: flex; align-items: center; gap: .8rem; background: var(--card); border: 1px solid var(--line); border-radius: 1rem; padding: .75rem 1rem; font-weight: 700; box-shadow: var(--shadow); }
 .flag { flex: none; width: 2.4rem; height: 1.6rem; border-radius: .3rem; box-shadow: 0 0 0 1px #00000026, 0 .2rem .5rem #0003; overflow: hidden; }
-@media (max-width: 52rem) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 62rem) { .grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 34rem) { .grid { grid-template-columns: 1fr; } }
 @media (max-width: 40rem) {
   .carousel { grid-template-columns: auto minmax(0, 1fr) auto; }

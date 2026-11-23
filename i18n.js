@@ -1,0 +1,303 @@
+// Mehrsprachige Startseite: elf Sprachen, ohne Fremdbibliothek.
+// Deutsch steht zusätzlich als Text im HTML (funktioniert auch ohne JavaScript).
+(() => {
+  const T = {
+    de: {
+      title: 'Kalino – Audimago', 'meta.desc': 'Kalino ist ein interaktiver Adventskalender für Kinder mit 24 Türchen und einer Überraschung, für iPhone und iPad in elf Sprachen.',
+      'nav.aria': 'Hauptnavigation', 'nav.desc': 'Beschreibung', 'nav.shots': 'Einblicke', 'nav.devices': 'Geräte', 'nav.langs': 'Sprachen', 'nav.info': 'Datenschutz & Kontakt', 'ui.language': 'Sprache',
+      name: 'Kalino', 'hero.alt': 'Kalino, der kleine Wichtel mit roter Mütze, Laterne und Adventskalender', 'hero.lead': 'Der interaktive Adventskalender für Kinder', 'hero.more': 'Mehr erfahren',
+      fact1: '24 Türchen + Überraschung', fact2: 'Keine Werbung', fact3: 'Kein Benutzerkonto', fact4: 'Daten bleiben auf dem Gerät',
+      'desc.h': 'Beschreibung',
+      'desc.p1': 'Wichtel Kalino lädt Kinder ein, gemeinsam den Advent zu erleben. Hinter jedem der 24 Türchen wartet ein kleines Abenteuer zum Mitmachen: Frost wegwischen, den Weihnachtsbaum schmücken, Plätzchen ausstechen und verzieren, ein Vogelhaus bauen oder einen Brief an den Weihnachtsmann malen. Mit jedem Türchen verändert sich Kalinos Stube und wird ein Stück gemütlicher. Am Ende wartet eine Überraschung.',
+      'desc.p2': 'Kinder tippen, wischen und ziehen. Bei jeder Aufgabe hilft ein Hinweis in Bildern und Text, und funkelnde Schneekugeln zeigen als Meilensteine, was schon geschafft ist. Die App ist für Kinder im Vorschulalter um 5 Jahre gedacht.',
+      'f1.t': '24 Türchen und eine Überraschung', 'f1.d': 'Vom 1. bis zum 24. Dezember wartet jeden Tag ein neues Abenteuer, am 25. Dezember eine Überraschung.',
+      'f2.t': 'Hinweise zum Verstehen', 'f2.d': 'Jede Aufgabe wird in Bildern und kurzem Text erklärt. Kleine Animationen zeigen, wie getippt, gewischt oder gezogen wird.',
+      'f3.t': 'Schneekugeln als Meilensteine', 'f3.d': 'Nach einigen Türchen funkelt eine Schneekugel. Sie zeigt dem Kind, wie weit es schon gekommen ist. Am Ende gibt es einen Rückblick auf alles Erlebte.',
+      'f4.t': 'Drei Spielmodi', 'f4.d': 'Echter Adventskalender, jeden Tag ein neues Türchen oder freies Spielen im eigenen Tempo.',
+      'f5.t': 'Elternbereich', 'f5.d': 'Einstellungen, Sprache, Spielmodus und Fortschritt sind hinter einer Rechenaufgabe für Erwachsene.',
+      'f6.t': 'Musik', 'f6.d': 'Weihnachtliche Hintergrundmusik, die sich im Elternbereich leiser stellen oder abschalten lässt.',
+      'f7.t': "Elf Sprachen", 'f7.d': "Deutsch, Englisch, Französisch, Spanisch, Niederländisch, Portugiesisch, Italienisch, Polnisch, Dänisch, Schwedisch und Norwegisch. Gewechselt wird im Elternbereich.",
+      'f8.t': "Fortschritt im Blick", 'f8.d': "Geschaffte Türchen bekommen einen Haken. Im Elternbereich sehen Erwachsene den Fortschritt und können den Kalender zurücksetzen.",
+      'shots.h': 'Einblicke', 'shots.region': 'Bilder aus der App', 'shots.track': 'Einblicke in die App. Mit den Pfeiltasten blättern.', 'shots.prev': 'Vorheriges Bild', 'shots.next': 'Nächstes Bild', 'shots.dot': 'Bild {n} von {total}',
+      s1: '24 Türchen und eine Überraschung', s2: 'Die Stube wird mit jedem Türchen gemütlicher', s3: 'Weihnachtliche Musik zum Auswählen', s4: 'Den Weihnachtsbaum schmücken', s5: 'Die Aufgabe wird in Bildern erklärt', s6: 'Einen Schneemann bauen', s7: 'Plätzchen verzieren',
+      'dev.h': 'Geräte', 'dev.iphone': 'Mit iOS 16.4 oder neuer.', 'dev.ipad': 'Mit iPadOS 16.4 oder neuer.', 'dev.note': 'Die App läuft im Querformat. Drehe dein Gerät quer, dann kann es losgehen.',
+      'lang.h': 'Sprachen', 'lang.note': 'Kalino gibt es in elf Sprachen. Die Sprache lässt sich im Elternbereich wechseln.',
+      'info.h': 'Datenschutz & Kontakt', 'priv.t': 'Datenschutz', 'priv.d': 'So geht Kalino mit Daten um. In elf Sprachen zum Nachlesen.', 'priv.go': 'Datenschutzerklärung lesen →', 'con.t': 'Kontakt', 'con.d': 'Fragen oder Wünsche zur App? Schreib uns eine E-Mail.', 'foot.priv': 'Datenschutz'
+    },
+    en: {
+      title: 'Kalino – Audimago', 'meta.desc': 'Kalino is an interactive Advent calendar for children with 24 doors and a surprise, for iPhone and iPad in eleven languages.',
+      'nav.aria': 'Main navigation', 'nav.desc': 'Description', 'nav.shots': 'Previews', 'nav.devices': 'Devices', 'nav.langs': 'Languages', 'nav.info': 'Privacy & contact', 'ui.language': 'Language',
+      name: 'Kalino', 'hero.alt': 'Kalino, the little elf with a red hat, a lantern and an Advent calendar', 'hero.lead': 'The interactive Advent calendar for children', 'hero.more': 'Learn more',
+      fact1: '24 doors + a surprise', fact2: 'No ads', fact3: 'No user account', fact4: 'Data stays on the device',
+      'desc.h': 'Description',
+      'desc.p1': "Elf Kalino invites children to experience Advent together. Behind each of the 24 doors waits a little adventure to join in: wiping away frost, decorating the Christmas tree, cutting out and decorating cookies, building a birdhouse or drawing a letter to Santa. With every door, Kalino's cottage changes and becomes a little cosier. In the end, a surprise is waiting.",
+      'desc.p2': 'Children tap, swipe and drag. Every task comes with a hint in pictures and text, and sparkling snow globes mark milestones that show what has already been achieved. The app is made for preschool children around 5 years old.',
+      'f1.t': '24 doors and a surprise', 'f1.d': 'From 1 to 24 December a new adventure waits every day, and on 25 December a surprise.',
+      'f2.t': 'Hints that explain', 'f2.d': 'Every task is explained with pictures and short text. Small animations show how to tap, swipe or drag.',
+      'f3.t': 'Snow globes as milestones', 'f3.d': 'After a few doors a snow globe sparkles. It shows the child how far they have come. At the end there is a look back at everything they did.',
+      'f4.t': 'Three play modes', 'f4.d': 'A real Advent calendar, a new door every day, or free play at your own pace.',
+      'f5.t': 'Parent area', 'f5.d': 'Settings, language, play mode and progress are behind a maths question for adults.',
+      'f6.t': 'Music', 'f6.d': 'Christmas background music that can be turned down or off in the parent area.',
+      'f7.t': "Eleven languages", 'f7.d': "German, English, French, Spanish, Dutch, Portuguese, Italian, Polish, Danish, Swedish and Norwegian. The language is switched in the parent area.",
+      'f8.t': "Progress at a glance", 'f8.d': "Finished doors get a tick. In the parent area, adults can see the progress and reset the calendar.",
+      'shots.h': 'Previews', 'shots.region': 'Pictures from the app', 'shots.track': 'Previews of the app. Use the arrow keys to browse.', 'shots.prev': 'Previous picture', 'shots.next': 'Next picture', 'shots.dot': 'Picture {n} of {total}',
+      s1: '24 doors and a surprise', s2: 'The cottage gets cosier with every door', s3: 'Christmas music to choose from', s4: 'Decorating the Christmas tree', s5: 'The task is explained in pictures', s6: 'Building a snowman', s7: 'Decorating cookies',
+      'dev.h': 'Devices', 'dev.iphone': 'With iOS 16.4 or later.', 'dev.ipad': 'With iPadOS 16.4 or later.', 'dev.note': 'The app runs in landscape. Turn your device sideways and off you go.',
+      'lang.h': 'Languages', 'lang.note': 'Kalino comes in eleven languages. You can switch the language in the parent area.',
+      'info.h': 'Privacy & contact', 'priv.t': 'Privacy', 'priv.d': 'How Kalino handles data. Available in eleven languages.', 'priv.go': 'Read the privacy policy →', 'con.t': 'Contact', 'con.d': 'Questions or wishes about the app? Send us an email.', 'foot.priv': 'Privacy'
+    },
+    fr: {
+      title: 'Kito – Audimago', 'meta.desc': "Kito est un calendrier de l'Avent interactif pour les enfants, avec 24 portes et une surprise, pour iPhone et iPad en onze langues.",
+      'nav.aria': 'Navigation principale', 'nav.desc': 'Description', 'nav.shots': 'Aperçu', 'nav.devices': 'Appareils', 'nav.langs': 'Langues', 'nav.info': 'Confidentialité et contact', 'ui.language': 'Langue',
+      name: 'Kito', 'hero.alt': "Kito, le petit lutin au bonnet rouge, avec une lanterne et un calendrier de l'Avent", 'hero.lead': "Le calendrier de l'Avent interactif pour les enfants", 'hero.more': 'En savoir plus',
+      fact1: '24 portes + une surprise', fact2: 'Sans publicité', fact3: 'Sans compte utilisateur', fact4: "Les données restent sur l'appareil",
+      'desc.h': 'Description',
+      'desc.p1': "Le lutin Kito invite les enfants à vivre l'Avent ensemble. Derrière chacune des 24 portes les attend une petite aventure à partager : essuyer le givre, décorer le sapin de Noël, découper et décorer des biscuits, construire une maisonnette pour les oiseaux ou dessiner une lettre au Père Noël. À chaque porte, la maison de Kito change et devient un peu plus douillette. À la fin, une surprise est au rendez-vous.",
+      'desc.p2': "Les enfants touchent, glissent et tirent. Chaque tâche est accompagnée d'un conseil en images et en texte, et des boules à neige scintillantes marquent des étapes pour montrer ce qui a déjà été accompli. L'application est conçue pour les enfants d'âge préscolaire, autour de 5 ans.",
+      'f1.t': '24 portes et une surprise', 'f1.d': "Du 1er au 24 décembre, une nouvelle aventure attend chaque jour, et le 25 décembre une surprise.",
+      'f2.t': 'Des conseils pour comprendre', 'f2.d': 'Chaque tâche est expliquée en images et en quelques mots. De petites animations montrent comment toucher, glisser ou tirer.',
+      'f3.t': 'Des boules à neige comme étapes', 'f3.d': "Après quelques portes, une boule à neige scintille. Elle montre à l'enfant le chemin parcouru. À la fin, un retour sur tout ce qu'il a vécu.",
+      'f4.t': 'Trois modes de jeu', 'f4.d': "Un vrai calendrier de l'Avent, une nouvelle porte chaque jour ou le jeu libre à son rythme.",
+      'f5.t': 'Espace parents', 'f5.d': 'Réglages, langue, mode de jeu et progression se trouvent derrière un calcul réservé aux adultes.',
+      'f6.t': 'Musique', 'f6.d': "Une musique de Noël en fond sonore, que l'on peut baisser ou couper dans l'espace parents.",
+      'f7.t': "Onze langues", 'f7.d': "Allemand, anglais, français, espagnol, néerlandais, portugais, italien, polonais, danois, suédois et norvégien. La langue se change dans l'espace parents.",
+      'f8.t': "La progression en un coup d'œil", 'f8.d': "Les portes terminées reçoivent une coche. Dans l'espace parents, les adultes voient la progression et peuvent réinitialiser le calendrier.",
+      'shots.h': 'Aperçu', 'shots.region': "Images de l'application", 'shots.track': "Aperçu de l'application. Utilisez les flèches du clavier pour naviguer.", 'shots.prev': 'Image précédente', 'shots.next': 'Image suivante', 'shots.dot': 'Image {n} sur {total}',
+      s1: '24 portes et une surprise', s2: 'La maison devient plus douillette à chaque porte', s3: 'De la musique de Noël au choix', s4: 'Décorer le sapin de Noël', s5: 'La tâche est expliquée en images', s6: 'Construire un bonhomme de neige', s7: 'Décorer des biscuits',
+      'dev.h': 'Appareils', 'dev.iphone': 'Avec iOS 16.4 ou plus récent.', 'dev.ipad': 'Avec iPadOS 16.4 ou plus récent.', 'dev.note': "L'application fonctionne en mode paysage. Tournez votre appareil, et c'est parti.",
+      'lang.h': 'Langues', 'lang.note': "Kito existe en onze langues. La langue se change dans l'espace parents.",
+      'info.h': 'Confidentialité et contact', 'priv.t': 'Confidentialité', 'priv.d': 'Comment Kito traite les données. À lire en onze langues.', 'priv.go': 'Lire la politique de confidentialité →', 'con.t': 'Contact', 'con.d': "Une question ou une envie à propos de l'application ? Écrivez-nous un e-mail.", 'foot.priv': 'Confidentialité'
+    },
+    es: {
+      title: 'Kalino – Audimago', 'meta.desc': 'Kalino es un calendario de Adviento interactivo para niños con 24 puertas y una sorpresa, para iPhone y iPad en once idiomas.',
+      'nav.aria': 'Navegación principal', 'nav.desc': 'Descripción', 'nav.shots': 'Vistas', 'nav.devices': 'Dispositivos', 'nav.langs': 'Idiomas', 'nav.info': 'Privacidad y contacto', 'ui.language': 'Idioma',
+      name: 'Kalino', 'hero.alt': 'Kalino, el pequeño elfo con gorro rojo, un farol y un calendario de Adviento', 'hero.lead': 'El calendario de Adviento interactivo para niños', 'hero.more': 'Saber más',
+      fact1: '24 puertas + una sorpresa', fact2: 'Sin publicidad', fact3: 'Sin cuenta de usuario', fact4: 'Los datos se quedan en el dispositivo',
+      'desc.h': 'Descripción',
+      'desc.p1': 'El elfo Kalino invita a los niños a vivir juntos el Adviento. Detrás de cada una de las 24 puertas espera una pequeña aventura para participar: limpiar la escarcha, decorar el árbol de Navidad, cortar y decorar galletas, construir una casita para pájaros o dibujar una carta a Papá Noel. Con cada puerta, la casita de Kalino cambia y se vuelve un poco más acogedora. Al final espera una sorpresa.',
+      'desc.p2': 'Los niños tocan, deslizan y arrastran. Cada tarea trae una pista en imágenes y texto, y brillantes bolas de nieve marcan hitos que muestran lo que ya se ha conseguido. La aplicación está pensada para niños en edad preescolar, de unos 5 años.',
+      'f1.t': '24 puertas y una sorpresa', 'f1.d': 'Del 1 al 24 de diciembre espera cada día una nueva aventura, y el 25 de diciembre una sorpresa.',
+      'f2.t': 'Pistas para entender', 'f2.d': 'Cada tarea se explica con imágenes y un texto breve. Pequeñas animaciones muestran cómo tocar, deslizar o arrastrar.',
+      'f3.t': 'Bolas de nieve como hitos', 'f3.d': 'Tras algunas puertas brilla una bola de nieve. Muestra al niño hasta dónde ha llegado. Al final hay un repaso de todo lo vivido.',
+      'f4.t': 'Tres modos de juego', 'f4.d': 'Un auténtico calendario de Adviento, una puerta nueva cada día o juego libre a tu propio ritmo.',
+      'f5.t': 'Zona para padres', 'f5.d': 'Los ajustes, el idioma, el modo de juego y el progreso están tras una operación para adultos.',
+      'f6.t': 'Música', 'f6.d': 'Música navideña de fondo que se puede bajar o apagar en la zona para padres.',
+      'f7.t': "Once idiomas", 'f7.d': "Alemán, inglés, francés, español, neerlandés, portugués, italiano, polaco, danés, sueco y noruego. El idioma se cambia en la zona para padres.",
+      'f8.t': "El progreso de un vistazo", 'f8.d': "Las puertas terminadas reciben una marca. En la zona para padres, los adultos ven el progreso y pueden reiniciar el calendario.",
+      'shots.h': 'Vistas', 'shots.region': 'Imágenes de la aplicación', 'shots.track': 'Vistas de la aplicación. Usa las flechas del teclado para avanzar.', 'shots.prev': 'Imagen anterior', 'shots.next': 'Imagen siguiente', 'shots.dot': 'Imagen {n} de {total}',
+      s1: '24 puertas y una sorpresa', s2: 'La casita se vuelve más acogedora con cada puerta', s3: 'Música navideña para elegir', s4: 'Decorar el árbol de Navidad', s5: 'La tarea se explica con imágenes', s6: 'Construir un muñeco de nieve', s7: 'Decorar galletas',
+      'dev.h': 'Dispositivos', 'dev.iphone': 'Con iOS 16.4 o posterior.', 'dev.ipad': 'Con iPadOS 16.4 o posterior.', 'dev.note': 'La aplicación funciona en horizontal. Gira tu dispositivo y ¡a jugar!',
+      'lang.h': 'Idiomas', 'lang.note': 'Kalino está disponible en once idiomas. El idioma se cambia en la zona para padres.',
+      'info.h': 'Privacidad y contacto', 'priv.t': 'Privacidad', 'priv.d': 'Cómo trata Kalino los datos. Disponible en once idiomas.', 'priv.go': 'Leer la política de privacidad →', 'con.t': 'Contacto', 'con.d': '¿Preguntas o deseos sobre la aplicación? Escríbenos un correo.', 'foot.priv': 'Privacidad'
+    },
+    nl: {
+      title: 'Kalino – Audimago', 'meta.desc': 'Kalino is een interactieve adventskalender voor kinderen met 24 deurtjes en een verrassing, voor iPhone en iPad in elf talen.',
+      'nav.aria': 'Hoofdnavigatie', 'nav.desc': 'Beschrijving', 'nav.shots': 'Impressie', 'nav.devices': 'Apparaten', 'nav.langs': 'Talen', 'nav.info': 'Privacy & contact', 'ui.language': 'Taal',
+      name: 'Kalino', 'hero.alt': 'Kalino, de kleine kabouter met rode muts, lantaarn en adventskalender', 'hero.lead': 'De interactieve adventskalender voor kinderen', 'hero.more': 'Meer weten',
+      fact1: '24 deurtjes + een verrassing', fact2: 'Geen reclame', fact3: 'Geen gebruikersaccount', fact4: 'Gegevens blijven op het apparaat',
+      'desc.h': 'Beschrijving',
+      'desc.p1': "Kabouter Kalino nodigt kinderen uit om samen de advent te beleven. Achter elk van de 24 deurtjes wacht een klein avontuur om mee te doen: ijs wegvegen, de kerstboom versieren, koekjes uitsteken en versieren, een vogelhuisje bouwen of een brief aan de Kerstman tekenen. Met elk deurtje verandert Kalino's huisje en wordt het iets gezelliger. Aan het eind wacht een verrassing.",
+      'desc.p2': 'Kinderen tikken, vegen en slepen. Bij elke opdracht helpt een tip in beeld en tekst, en glinsterende sneeuwbollen laten als mijlpaal zien wat al gelukt is. De app is bedoeld voor kinderen in de kleuterleeftijd, rond 5 jaar.',
+      'f1.t': '24 deurtjes en een verrassing', 'f1.d': 'Van 1 tot en met 24 december wacht elke dag een nieuw avontuur, en op 25 december een verrassing.',
+      'f2.t': 'Tips die uitleggen', 'f2.d': 'Elke opdracht wordt uitgelegd met plaatjes en korte tekst. Kleine animaties laten zien hoe je tikt, veegt of sleept.',
+      'f3.t': 'Sneeuwbollen als mijlpalen', 'f3.d': 'Na een paar deurtjes glinstert er een sneeuwbol. Die laat het kind zien hoe ver het al is. Aan het eind is er een terugblik op alles wat het beleefd heeft.',
+      'f4.t': 'Drie spelmodi', 'f4.d': 'Een echte adventskalender, elke dag een nieuw deurtje of vrij spelen in je eigen tempo.',
+      'f5.t': 'Ouderzone', 'f5.d': 'Instellingen, taal, spelmodus en voortgang zitten achter een rekensom voor volwassenen.',
+      'f6.t': 'Muziek', 'f6.d': 'Kerstachtergrondmuziek die je in de ouderzone zachter of uit kunt zetten.',
+      'f7.t': "Elf talen", 'f7.d': "Duits, Engels, Frans, Spaans, Nederlands, Portugees, Italiaans, Pools, Deens, Zweeds en Noors. De taal wijzig je in de ouderzone.",
+      'f8.t': "Voortgang in één oogopslag", 'f8.d': "Afgeronde deurtjes krijgen een vinkje. In de ouderzone zien volwassenen de voortgang en kunnen ze de kalender opnieuw instellen.",
+      'shots.h': 'Impressie', 'shots.region': 'Beelden uit de app', 'shots.track': 'Impressie van de app. Blader met de pijltjestoetsen.', 'shots.prev': 'Vorige afbeelding', 'shots.next': 'Volgende afbeelding', 'shots.dot': 'Afbeelding {n} van {total}',
+      s1: '24 deurtjes en een verrassing', s2: 'Het huisje wordt met elk deurtje gezelliger', s3: 'Kerstmuziek om uit te kiezen', s4: 'De kerstboom versieren', s5: 'De opdracht wordt in beeld uitgelegd', s6: 'Een sneeuwpop bouwen', s7: 'Koekjes versieren',
+      'dev.h': 'Apparaten', 'dev.iphone': 'Met iOS 16.4 of nieuwer.', 'dev.ipad': 'Met iPadOS 16.4 of nieuwer.', 'dev.note': 'De app draait in liggende stand. Draai je apparaat en je kunt beginnen.',
+      'lang.h': 'Talen', 'lang.note': 'Kalino is er in elf talen. De taal wijzig je in de ouderzone.',
+      'info.h': 'Privacy & contact', 'priv.t': 'Privacy', 'priv.d': 'Hoe Kalino met gegevens omgaat. In elf talen te lezen.', 'priv.go': 'Privacyverklaring lezen →', 'con.t': 'Contact', 'con.d': 'Vragen of wensen over de app? Stuur ons een e-mail.', 'foot.priv': 'Privacy'
+    },
+    'pt-PT': {
+      title: 'Kalino – Audimago', 'meta.desc': 'O Kalino é um calendário do Advento interativo para crianças, com 24 janelas e uma surpresa, para iPhone e iPad em onze idiomas.',
+      'nav.aria': 'Navegação principal', 'nav.desc': 'Descrição', 'nav.shots': 'Imagens', 'nav.devices': 'Dispositivos', 'nav.langs': 'Idiomas', 'nav.info': 'Privacidade e contacto', 'ui.language': 'Idioma',
+      name: 'Kalino', 'hero.alt': 'O Kalino, o pequeno duende de gorro vermelho, com uma lanterna e um calendário do Advento', 'hero.lead': 'O calendário do Advento interativo para crianças', 'hero.more': 'Saber mais',
+      fact1: '24 janelas + uma surpresa', fact2: 'Sem publicidade', fact3: 'Sem conta de utilizador', fact4: 'Os dados ficam no dispositivo',
+      'desc.h': 'Descrição',
+      'desc.p1': 'O duende Kalino convida as crianças a viver o Advento em conjunto. Atrás de cada uma das 24 janelas espera uma pequena aventura para participar: limpar a geada, decorar a árvore de Natal, cortar e decorar bolachas, construir uma casinha para pássaros ou desenhar uma carta ao Pai Natal. A cada janela, a casinha do Kalino muda e fica um pouco mais acolhedora. No fim, espera uma surpresa.',
+      'desc.p2': 'As crianças tocam, deslizam e arrastam. Cada tarefa traz uma dica em imagens e texto, e globos de neve cintilantes assinalam marcos que mostram o que já foi conseguido. A aplicação foi pensada para crianças em idade pré-escolar, por volta dos 5 anos.',
+      'f1.t': '24 janelas e uma surpresa', 'f1.d': 'De 1 a 24 de dezembro, espera todos os dias uma nova aventura, e a 25 de dezembro uma surpresa.',
+      'f2.t': 'Dicas que explicam', 'f2.d': 'Cada tarefa é explicada com imagens e um texto curto. Pequenas animações mostram como tocar, deslizar ou arrastar.',
+      'f3.t': 'Globos de neve como marcos', 'f3.d': 'Depois de algumas janelas, brilha um globo de neve. Mostra à criança até onde já chegou. No fim, há um olhar sobre tudo o que viveu.',
+      'f4.t': 'Três modos de jogo', 'f4.d': 'Um verdadeiro calendário do Advento, uma janela nova por dia ou jogo livre ao seu próprio ritmo.',
+      'f5.t': 'Área dos pais', 'f5.d': 'As definições, o idioma, o modo de jogo e o progresso ficam atrás de uma conta para adultos.',
+      'f6.t': 'Música', 'f6.d': 'Música de Natal de fundo, que se pode baixar ou desligar na área dos pais.',
+      'f7.t': "Onze idiomas", 'f7.d': "Alemão, inglês, francês, espanhol, neerlandês, português, italiano, polaco, dinamarquês, sueco e norueguês. O idioma muda-se na área dos pais.",
+      'f8.t': "Progresso num relance", 'f8.d': "As janelas concluídas recebem um visto. Na área dos pais, os adultos veem o progresso e podem repor o calendário.",
+      'shots.h': 'Imagens', 'shots.region': 'Imagens da aplicação', 'shots.track': 'Imagens da aplicação. Use as setas do teclado para navegar.', 'shots.prev': 'Imagem anterior', 'shots.next': 'Imagem seguinte', 'shots.dot': 'Imagem {n} de {total}',
+      s1: '24 janelas e uma surpresa', s2: 'A casinha fica mais acolhedora a cada janela', s3: 'Música de Natal à escolha', s4: 'Decorar a árvore de Natal', s5: 'A tarefa é explicada em imagens', s6: 'Construir um boneco de neve', s7: 'Decorar bolachas',
+      'dev.h': 'Dispositivos', 'dev.iphone': 'Com iOS 16.4 ou superior.', 'dev.ipad': 'Com iPadOS 16.4 ou superior.', 'dev.note': 'A aplicação funciona na horizontal. Rode o dispositivo e está pronto.',
+      'lang.h': 'Idiomas', 'lang.note': 'O Kalino está disponível em onze idiomas. O idioma muda-se na área dos pais.',
+      'info.h': 'Privacidade e contacto', 'priv.t': 'Privacidade', 'priv.d': 'Como o Kalino trata os dados. Disponível em onze idiomas.', 'priv.go': 'Ler a política de privacidade →', 'con.t': 'Contacto', 'con.d': 'Dúvidas ou desejos sobre a aplicação? Envie-nos um e-mail.', 'foot.priv': 'Privacidade'
+    },
+    it: {
+      title: 'Kalino – Audimago', 'meta.desc': "Kalino è un calendario dell'Avvento interattivo per bambini con 24 finestrelle e una sorpresa, per iPhone e iPad in undici lingue.",
+      'nav.aria': 'Navigazione principale', 'nav.desc': 'Descrizione', 'nav.shots': 'Anteprime', 'nav.devices': 'Dispositivi', 'nav.langs': 'Lingue', 'nav.info': 'Privacy e contatti', 'ui.language': 'Lingua',
+      name: 'Kalino', 'hero.alt': "Kalino, il piccolo elfo con il cappello rosso, la lanterna e il calendario dell'Avvento", 'hero.lead': "Il calendario dell'Avvento interattivo per bambini", 'hero.more': 'Scopri di più',
+      fact1: '24 finestrelle + una sorpresa', fact2: 'Senza pubblicità', fact3: 'Nessun account utente', fact4: 'I dati restano sul dispositivo',
+      'desc.h': 'Descrizione',
+      'desc.p1': "L'elfo Kalino invita i bambini a vivere insieme l'Avvento. Dietro ognuna delle 24 finestrelle li aspetta una piccola avventura da fare insieme: togliere il gelo, addobbare l'albero di Natale, tagliare e decorare i biscotti, costruire una casetta per gli uccellini o disegnare una lettera a Babbo Natale. A ogni finestrella la casetta di Kalino cambia e diventa un po' più accogliente. Alla fine li aspetta una sorpresa.",
+      'desc.p2': "I bambini toccano, scorrono e trascinano. Ogni compito è accompagnato da un suggerimento in immagini e testo, e scintillanti palle di neve segnano traguardi che mostrano ciò che è già stato fatto. L'app è pensata per bambini in età prescolare, intorno ai 5 anni.",
+      'f1.t': '24 finestrelle e una sorpresa', 'f1.d': 'Dal 1° al 24 dicembre ogni giorno aspetta una nuova avventura e il 25 dicembre una sorpresa.',
+      'f2.t': 'Suggerimenti che spiegano', 'f2.d': 'Ogni compito è spiegato con immagini e un breve testo. Piccole animazioni mostrano come toccare, scorrere o trascinare.',
+      'f3.t': 'Palle di neve come traguardi', 'f3.d': "Dopo alcune finestrelle brilla una palla di neve. Mostra al bambino a che punto è arrivato. Alla fine c'è uno sguardo a tutto ciò che ha vissuto.",
+      'f4.t': 'Tre modalità di gioco', 'f4.d': "Un vero calendario dell'Avvento, una nuova finestrella ogni giorno o gioco libero con i propri tempi.",
+      'f5.t': 'Area genitori', 'f5.d': 'Impostazioni, lingua, modalità di gioco e progressi sono protetti da un calcolo per adulti.',
+      'f6.t': 'Musica', 'f6.d': "Musica natalizia di sottofondo, che nell'area genitori si può abbassare o spegnere.",
+      'f7.t': "Undici lingue", 'f7.d': "Tedesco, inglese, francese, spagnolo, olandese, portoghese, italiano, polacco, danese, svedese e norvegese. La lingua si cambia nell'area genitori.",
+      'f8.t': "Progressi a colpo d'occhio", 'f8.d': "Le finestrelle completate ricevono una spunta. Nell'area genitori gli adulti vedono i progressi e possono reimpostare il calendario.",
+      'shots.h': 'Anteprime', 'shots.region': "Immagini dell'app", 'shots.track': "Anteprime dell'app. Usa le frecce della tastiera per scorrere.", 'shots.prev': 'Immagine precedente', 'shots.next': 'Immagine successiva', 'shots.dot': 'Immagine {n} di {total}',
+      s1: '24 finestrelle e una sorpresa', s2: 'La casetta diventa più accogliente a ogni finestrella', s3: 'Musica natalizia da scegliere', s4: "Addobbare l'albero di Natale", s5: 'Il compito è spiegato con le immagini', s6: 'Costruire un pupazzo di neve', s7: 'Decorare i biscotti',
+      'dev.h': 'Dispositivi', 'dev.iphone': 'Con iOS 16.4 o successivo.', 'dev.ipad': 'Con iPadOS 16.4 o successivo.', 'dev.note': "L'app funziona in orizzontale. Ruota il dispositivo e si parte.",
+      'lang.h': 'Lingue', 'lang.note': "Kalino è disponibile in undici lingue. La lingua si cambia nell'area genitori.",
+      'info.h': 'Privacy e contatti', 'priv.t': 'Privacy', 'priv.d': 'Come Kalino tratta i dati. Da leggere in undici lingue.', 'priv.go': "Leggi l'informativa sulla privacy →", 'con.t': 'Contatti', 'con.d': "Domande o desideri sull'app? Scrivici un'e-mail.", 'foot.priv': 'Privacy'
+    },
+    pl: {
+      title: 'Kalino – Audimago', 'meta.desc': "Kalino to interaktywny kalendarz adwentowy dla dzieci z 24 okienkami i niespodzianką, na iPhone'a i iPada w jedenastu językach.",
+      'nav.aria': 'Nawigacja główna', 'nav.desc': 'Opis', 'nav.shots': 'Podgląd', 'nav.devices': 'Urządzenia', 'nav.langs': 'Języki', 'nav.info': 'Prywatność i kontakt', 'ui.language': 'Język',
+      name: 'Kalino', 'hero.alt': 'Kalino, mały skrzat w czerwonej czapce z latarnią i kalendarzem adwentowym', 'hero.lead': 'Interaktywny kalendarz adwentowy dla dzieci', 'hero.more': 'Dowiedz się więcej',
+      fact1: '24 okienka + niespodzianka', fact2: 'Bez reklam', fact3: 'Bez konta użytkownika', fact4: 'Dane zostają na urządzeniu',
+      'desc.h': 'Opis',
+      'desc.p1': 'Skrzat Kalino zaprasza dzieci do wspólnego przeżywania Adwentu. Za każdym z 24 okienek czeka mała przygoda do wspólnej zabawy: ścieranie szronu, ubieranie choinki, wykrawanie i ozdabianie ciasteczek, budowanie budki dla ptaków albo rysowanie listu do Świętego Mikołaja. Z każdym okienkiem domek Kalina zmienia się i staje się trochę przytulniejszy. Na końcu czeka niespodzianka.',
+      'desc.p2': 'Dzieci stukają, przesuwają i przeciągają. Przy każdym zadaniu pomaga wskazówka w obrazkach i tekście, a błyszczące śnieżne kule jako kamienie milowe pokazują, co już się udało. Aplikacja jest przeznaczona dla dzieci w wieku przedszkolnym, około 5 lat.',
+      'f1.t': '24 okienka i niespodzianka', 'f1.d': 'Od 1 do 24 grudnia każdego dnia czeka nowa przygoda, a 25 grudnia niespodzianka.',
+      'f2.t': 'Wskazówki, które tłumaczą', 'f2.d': 'Każde zadanie jest wyjaśnione obrazkami i krótkim tekstem. Małe animacje pokazują, jak stukać, przesuwać lub przeciągać.',
+      'f3.t': 'Śnieżne kule jako kamienie milowe', 'f3.d': 'Po kilku okienkach błyszczy śnieżna kula. Pokazuje dziecku, jak daleko już doszło. Na końcu jest powrót do wszystkiego, co przeżyło.',
+      'f4.t': 'Trzy tryby gry', 'f4.d': 'Prawdziwy kalendarz adwentowy, codziennie nowe okienko albo swobodna zabawa we własnym tempie.',
+      'f5.t': 'Strefa rodzica', 'f5.d': 'Ustawienia, język, tryb gry i postępy kryją się za zadaniem rachunkowym dla dorosłych.',
+      'f6.t': 'Muzyka', 'f6.d': 'Świąteczna muzyka w tle, którą w strefie rodzica można ściszyć lub wyłączyć.',
+      'f7.t': "Jedenaście języków", 'f7.d': "Niemiecki, angielski, francuski, hiszpański, niderlandzki, portugalski, włoski, polski, duński, szwedzki i norweski. Język zmienisz w strefie rodzica.",
+      'f8.t': "Postępy na pierwszy rzut oka", 'f8.d': "Ukończone okienka dostają ptaszek. W strefie rodzica dorośli widzą postępy i mogą zresetować kalendarz.",
+      'shots.h': 'Podgląd', 'shots.region': 'Obrazy z aplikacji', 'shots.track': 'Podgląd aplikacji. Przeglądaj strzałkami na klawiaturze.', 'shots.prev': 'Poprzedni obraz', 'shots.next': 'Następny obraz', 'shots.dot': 'Obraz {n} z {total}',
+      s1: '24 okienka i niespodzianka', s2: 'Domek jest przytulniejszy z każdym okienkiem', s3: 'Świąteczna muzyka do wyboru', s4: 'Ubieranie choinki', s5: 'Zadanie wyjaśnione w obrazkach', s6: 'Lepienie bałwana', s7: 'Ozdabianie ciasteczek',
+      'dev.h': 'Urządzenia', 'dev.iphone': 'Z iOS 16.4 lub nowszym.', 'dev.ipad': 'Z iPadOS 16.4 lub nowszym.', 'dev.note': 'Aplikacja działa w poziomie. Obróć urządzenie i można zaczynać.',
+      'lang.h': 'Języki', 'lang.note': 'Kalino jest dostępne w jedenastu językach. Język zmienisz w strefie rodzica.',
+      'info.h': 'Prywatność i kontakt', 'priv.t': 'Prywatność', 'priv.d': 'Jak Kalino obchodzi się z danymi. Do przeczytania w jedenastu językach.', 'priv.go': 'Przeczytaj politykę prywatności →', 'con.t': 'Kontakt', 'con.d': 'Pytania lub życzenia dotyczące aplikacji? Napisz do nas e-mail.', 'foot.priv': 'Prywatność'
+    },
+    da: {
+      title: 'Kalino – Audimago', 'meta.desc': 'Kalino er en interaktiv julekalender for børn med 24 låger og en overraskelse, til iPhone og iPad på elleve sprog.',
+      'nav.aria': 'Hovednavigation', 'nav.desc': 'Beskrivelse', 'nav.shots': 'Indblik', 'nav.devices': 'Enheder', 'nav.langs': 'Sprog', 'nav.info': 'Privatliv og kontakt', 'ui.language': 'Sprog',
+      name: 'Kalino', 'hero.alt': 'Kalino, den lille nisse med rød hue, lanterne og julekalender', 'hero.lead': 'Den interaktive julekalender for børn', 'hero.more': 'Læs mere',
+      fact1: '24 låger + en overraskelse', fact2: 'Ingen reklamer', fact3: 'Ingen brugerkonto', fact4: 'Data bliver på enheden',
+      'desc.h': 'Beskrivelse',
+      'desc.p1': 'Nissen Kalino inviterer børn til at opleve juletiden sammen. Bag hver af de 24 låger venter et lille eventyr, man kan deltage i: tørre rim af, pynte juletræet, stikke og pynte småkager, bygge et fuglehus eller tegne et brev til julemanden. For hver låge ændrer Kalinos stue sig og bliver en smule hyggeligere. Til sidst venter en overraskelse.',
+      'desc.p2': 'Børnene trykker, stryger og trækker. Til hver opgave hører et tip i billeder og tekst, og glitrende snekugler viser som milepæle, hvad der allerede er klaret. Appen er lavet til børn i førskolealderen, omkring 5 år.',
+      'f1.t': '24 låger og en overraskelse', 'f1.d': 'Fra 1. til 24. december venter der hver dag et nyt eventyr, og den 25. december en overraskelse.',
+      'f2.t': 'Tips, der forklarer', 'f2.d': 'Hver opgave forklares med billeder og kort tekst. Små animationer viser, hvordan man trykker, stryger eller trækker.',
+      'f3.t': 'Snekugler som milepæle', 'f3.d': 'Efter nogle låger glitrer en snekugle. Den viser barnet, hvor langt det er nået. Til sidst er der et tilbageblik på alt, det har oplevet.',
+      'f4.t': 'Tre spiltilstande', 'f4.d': 'En rigtig julekalender, en ny låge hver dag eller frit spil i eget tempo.',
+      'f5.t': 'Forælderområde', 'f5.d': 'Indstillinger, sprog, spiltilstand og fremskridt ligger bag en regneopgave til voksne.',
+      'f6.t': 'Musik', 'f6.d': 'Julemusik i baggrunden, som man kan skrue ned for eller slå fra i forælderområdet.',
+      'f7.t': "Elleve sprog", 'f7.d': "Tysk, engelsk, fransk, spansk, hollandsk, portugisisk, italiensk, polsk, dansk, svensk og norsk. Sproget skifter man i forælderområdet.",
+      'f8.t': "Fremskridt med et blik", 'f8.d': "Færdige låger får et flueben. I forælderområdet kan voksne se fremskridtet og nulstille kalenderen.",
+      'shots.h': 'Indblik', 'shots.region': 'Billeder fra appen', 'shots.track': 'Indblik i appen. Brug piletasterne til at bladre.', 'shots.prev': 'Forrige billede', 'shots.next': 'Næste billede', 'shots.dot': 'Billede {n} af {total}',
+      s1: '24 låger og en overraskelse', s2: 'Stuen bliver hyggeligere for hver låge', s3: 'Julemusik at vælge imellem', s4: 'Pynte juletræet', s5: 'Opgaven forklares i billeder', s6: 'Bygge en snemand', s7: 'Pynte småkager',
+      'dev.h': 'Enheder', 'dev.iphone': 'Med iOS 16.4 eller nyere.', 'dev.ipad': 'Med iPadOS 16.4 eller nyere.', 'dev.note': 'Appen kører på langs. Drej din enhed, så kan det gå løs.',
+      'lang.h': 'Sprog', 'lang.note': 'Kalino findes på elleve sprog. Sproget skifter man i forælderområdet.',
+      'info.h': 'Privatliv og kontakt', 'priv.t': 'Privatliv', 'priv.d': 'Sådan håndterer Kalino data. Kan læses på elleve sprog.', 'priv.go': 'Læs privatlivserklæringen →', 'con.t': 'Kontakt', 'con.d': 'Spørgsmål eller ønsker til appen? Send os en e-mail.', 'foot.priv': 'Privatliv'
+    },
+    sv: {
+      title: 'Kalino – Audimago', 'meta.desc': 'Kalino är en interaktiv adventskalender för barn med 24 luckor och en överraskning, för iPhone och iPad på elva språk.',
+      'nav.aria': 'Huvudnavigering', 'nav.desc': 'Beskrivning', 'nav.shots': 'Inblick', 'nav.devices': 'Enheter', 'nav.langs': 'Språk', 'nav.info': 'Integritet och kontakt', 'ui.language': 'Språk',
+      name: 'Kalino', 'hero.alt': 'Kalino, den lilla tomten med röd luva, lykta och adventskalender', 'hero.lead': 'Den interaktiva adventskalendern för barn', 'hero.more': 'Läs mer',
+      fact1: '24 luckor + en överraskning', fact2: 'Ingen reklam', fact3: 'Inget användarkonto', fact4: 'Uppgifterna stannar på enheten',
+      'desc.h': 'Beskrivning',
+      'desc.p1': 'Tomten Kalino bjuder in barn att uppleva advent tillsammans. Bakom var och en av de 24 luckorna väntar ett litet äventyr att vara med i: torka bort rimfrost, pynta julgranen, utstansa och dekorera pepparkakor, bygga ett fågelhus eller rita ett brev till tomten. För varje lucka förändras Kalinos stuga och blir lite mysigare. Till sist väntar en överraskning.',
+      'desc.p2': 'Barnen trycker, drar och sveper. Till varje uppgift hör en ledtråd i bilder och text, och glittrande snöglober visar som milstolpar vad som redan är klart. Appen är gjord för barn i förskoleåldern, omkring 5 år.',
+      'f1.t': '24 luckor och en överraskning', 'f1.d': 'Från 1 till 24 december väntar ett nytt äventyr varje dag, och den 25 december en överraskning.',
+      'f2.t': 'Ledtrådar som förklarar', 'f2.d': 'Varje uppgift förklaras med bilder och kort text. Små animationer visar hur man trycker, sveper eller drar.',
+      'f3.t': 'Snöglober som milstolpar', 'f3.d': 'Efter några luckor glittrar en snöglob. Den visar barnet hur långt det har kommit. Till sist finns en tillbakablick på allt det har upplevt.',
+      'f4.t': 'Tre spelägen', 'f4.d': 'En riktig adventskalender, en ny lucka varje dag eller fritt spel i egen takt.',
+      'f5.t': 'Föräldraområde', 'f5.d': 'Inställningar, språk, spelläge och framsteg ligger bakom en räkneuppgift för vuxna.',
+      'f6.t': 'Musik', 'f6.d': 'Julmusik i bakgrunden som kan sänkas eller stängas av i föräldraområdet.',
+      'f7.t': "Elva språk", 'f7.d': "Tyska, engelska, franska, spanska, nederländska, portugisiska, italienska, polska, danska, svenska och norska. Språket byter du i föräldraområdet.",
+      'f8.t': "Framsteg med en blick", 'f8.d': "Klara luckor får en bock. I föräldraområdet kan vuxna se framstegen och nollställa kalendern.",
+      'shots.h': 'Inblick', 'shots.region': 'Bilder från appen', 'shots.track': 'Inblick i appen. Bläddra med piltangenterna.', 'shots.prev': 'Föregående bild', 'shots.next': 'Nästa bild', 'shots.dot': 'Bild {n} av {total}',
+      s1: '24 luckor och en överraskning', s2: 'Stugan blir mysigare för varje lucka', s3: 'Julmusik att välja mellan', s4: 'Pynta julgranen', s5: 'Uppgiften förklaras i bilder', s6: 'Bygga en snögubbe', s7: 'Dekorera pepparkakor',
+      'dev.h': 'Enheter', 'dev.iphone': 'Med iOS 16.4 eller senare.', 'dev.ipad': 'Med iPadOS 16.4 eller senare.', 'dev.note': 'Appen körs i liggande läge. Vrid enheten så kan det börja.',
+      'lang.h': 'Språk', 'lang.note': 'Kalino finns på elva språk. Språket byter du i föräldraområdet.',
+      'info.h': 'Integritet och kontakt', 'priv.t': 'Integritet', 'priv.d': 'Så hanterar Kalino uppgifter. Kan läsas på elva språk.', 'priv.go': 'Läs integritetspolicyn →', 'con.t': 'Kontakt', 'con.d': 'Frågor eller önskemål om appen? Skicka ett mejl till oss.', 'foot.priv': 'Integritet'
+    },
+    nb: {
+      title: 'Kalino – Audimago', 'meta.desc': 'Kalino er en interaktiv julekalender for barn med 24 luker og en overraskelse, for iPhone og iPad på elleve språk.',
+      'nav.aria': 'Hovednavigasjon', 'nav.desc': 'Beskrivelse', 'nav.shots': 'Innblikk', 'nav.devices': 'Enheter', 'nav.langs': 'Språk', 'nav.info': 'Personvern og kontakt', 'ui.language': 'Språk',
+      name: 'Kalino', 'hero.alt': 'Kalino, den lille nissen med rød lue, lykt og julekalender', 'hero.lead': 'Den interaktive julekalenderen for barn', 'hero.more': 'Les mer',
+      fact1: '24 luker + en overraskelse', fact2: 'Ingen reklame', fact3: 'Ingen brukerkonto', fact4: 'Dataene blir på enheten',
+      'desc.h': 'Beskrivelse',
+      'desc.p1': 'Nissen Kalino inviterer barn til å oppleve julen sammen. Bak hver av de 24 lukene venter et lite eventyr å være med på: tørke bort rim, pynte juletreet, stikke ut og dekorere pepperkaker, bygge et fuglehus eller tegne et brev til julenissen. For hver luke forandrer Kalinos stue seg og blir litt koseligere. Til slutt venter en overraskelse.',
+      'desc.p2': 'Barna trykker, sveiper og drar. Til hver oppgave hører et tips i bilder og tekst, og glitrende snøkuler viser som milepæler hva som allerede er gjort. Appen er laget for barn i barnehagealder, rundt 5 år.',
+      'f1.t': '24 luker og en overraskelse', 'f1.d': 'Fra 1. til 24. desember venter et nytt eventyr hver dag, og 25. desember en overraskelse.',
+      'f2.t': 'Tips som forklarer', 'f2.d': 'Hver oppgave forklares med bilder og kort tekst. Små animasjoner viser hvordan man trykker, sveiper eller drar.',
+      'f3.t': 'Snøkuler som milepæler', 'f3.d': 'Etter noen luker glitrer en snøkule. Den viser barnet hvor langt det har kommet. Til slutt er det et tilbakeblikk på alt det har opplevd.',
+      'f4.t': 'Tre spillmoduser', 'f4.d': 'En ekte julekalender, en ny luke hver dag eller fritt spill i eget tempo.',
+      'f5.t': 'Foreldreområde', 'f5.d': 'Innstillinger, språk, spillmodus og fremgang ligger bak en regneoppgave for voksne.',
+      'f6.t': 'Musikk', 'f6.d': 'Julemusikk i bakgrunnen som kan skrus ned eller av i foreldreområdet.',
+      'f7.t': "Elleve språk", 'f7.d': "Tysk, engelsk, fransk, spansk, nederlandsk, portugisisk, italiensk, polsk, dansk, svensk og norsk. Språket bytter du i foreldreområdet.",
+      'f8.t': "Fremgang med et blikk", 'f8.d': "Ferdige luker får en hake. I foreldreområdet kan voksne se fremgangen og nullstille kalenderen.",
+      'shots.h': 'Innblikk', 'shots.region': 'Bilder fra appen', 'shots.track': 'Innblikk i appen. Bla med piltastene.', 'shots.prev': 'Forrige bilde', 'shots.next': 'Neste bilde', 'shots.dot': 'Bilde {n} av {total}',
+      s1: '24 luker og en overraskelse', s2: 'Stuen blir koseligere for hver luke', s3: 'Julemusikk å velge mellom', s4: 'Pynte juletreet', s5: 'Oppgaven forklares i bilder', s6: 'Bygge en snømann', s7: 'Dekorere pepperkaker',
+      'dev.h': 'Enheter', 'dev.iphone': 'Med iOS 16.4 eller nyere.', 'dev.ipad': 'Med iPadOS 16.4 eller nyere.', 'dev.note': 'Appen kjører i liggende format. Vri enheten, så kan det begynne.',
+      'lang.h': 'Språk', 'lang.note': 'Kalino finnes på elleve språk. Språket bytter du i foreldreområdet.',
+      'info.h': 'Personvern og kontakt', 'priv.t': 'Personvern', 'priv.d': 'Slik behandler Kalino data. Kan leses på elleve språk.', 'priv.go': 'Les personvernerklæringen →', 'con.t': 'Kontakt', 'con.d': 'Spørsmål eller ønsker om appen? Send oss en e-post.', 'foot.priv': 'Personvern'
+    }
+  };
+
+  const CODES = Object.keys(T);
+  const STORE = 'kalino-lang';
+
+  function match(tag) {
+    const l = String(tag || '').toLowerCase();
+    if (l.startsWith('pt')) return 'pt-PT';
+    if (l.startsWith('nb') || l.startsWith('no') || l.startsWith('nn')) return 'nb';
+    const base = l.split('-')[0];
+    return CODES.includes(base) ? base : null;
+  }
+  function initial() {
+    const q = new URLSearchParams(location.search).get('lang');
+    if (q && CODES.includes(q)) return q;
+    try { const s = localStorage.getItem(STORE); if (s && CODES.includes(s)) return s; } catch (e) {}
+    for (const tag of navigator.languages || [navigator.language]) { const m = match(tag); if (m) return m; }
+    return 'en';
+  }
+
+  const api = {
+    lang: 'de',
+    t(key, vars) {
+      let s = (T[api.lang] && T[api.lang][key]) || T.de[key] || '';
+      if (vars) for (const [k, v] of Object.entries(vars)) s = s.replaceAll(`{${k}}`, String(v));
+      return s;
+    }
+  };
+  window.kalino = api;
+
+  function apply(code, persist) {
+    api.lang = code;
+    document.documentElement.lang = code;
+    document.title = api.t('title');
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) meta.setAttribute('content', api.t('meta.desc'));
+    document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = api.t(el.dataset.i18n); });
+    document.querySelectorAll('[data-i18n-alt]').forEach(el => el.setAttribute('alt', api.t(el.dataset.i18nAlt)));
+    document.querySelectorAll('[data-i18n-aria]').forEach(el => el.setAttribute('aria-label', api.t(el.dataset.i18nAria)));
+    document.querySelectorAll('a[data-keeplang]').forEach(a => {
+      a.setAttribute('href', `${a.getAttribute('href').split('?')[0]}?lang=${code}`);
+    });
+    const select = document.querySelector('#language');
+    if (select) select.value = code;
+    if (persist) {
+      try { localStorage.setItem(STORE, code); } catch (e) {}
+      const url = new URL(location.href);
+      url.searchParams.set('lang', code);
+      history.replaceState(null, '', url);
+    }
+    document.dispatchEvent(new CustomEvent('kalino:lang', { detail: code }));
+  }
+
+  const select = document.querySelector('#language');
+  if (select) select.addEventListener('change', () => apply(select.value, true));
+  apply(initial(), false);
+})();
