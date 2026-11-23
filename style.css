@@ -112,11 +112,10 @@ footer a { color: var(--muted); }
 .tile.privacy { background: radial-gradient(18rem 10rem at 100% 0%, #5c86e855, transparent 70%), linear-gradient(135deg, #14223c, #25458a); }
 .tile.contact { color: #2a1a00; background: var(--gold); }
 .tile.contact .d { color: #4a3000; }
-.tile.contact .ico { background: #2a1a0014; }
 .tile.contact::after { background: #ffffff40; }
-.tile.privacy .ico { background: #e3b45e26; color: var(--gold); }
-.tile .ico { display: grid; place-items: center; width: 4rem; height: 4rem; border-radius: 1.2rem; background: #ffffff26; margin-bottom: .6rem; position: relative; z-index: 1; }
-.tile .ico svg { width: 2.4rem; height: 2.4rem; }
+
+.tile .ico { display: grid; place-items: center; width: 4.6rem; height: 4.6rem; border-radius: 1.3rem; background: #fff4dc; box-shadow: 0 .4rem 1rem #0003; margin-bottom: .6rem; position: relative; z-index: 1; }
+.tile .ico img { width: 3.2rem; height: 3.2rem; display: block; }
 .tile .t { font-family: var(--display); font-weight: 800; font-size: 1.6rem; line-height: 1.15; position: relative; z-index: 1; }
 .tile .d { color: #ffffffe6; position: relative; z-index: 1; }
 .tile .go { margin-top: .8rem; font-weight: 700; position: relative; z-index: 1; }

@@ -7,6 +7,8 @@
 | --- | --- |
 | `assets/kalino-icon.png` (360 px), `assets/favicon.png` (96 px) | Verkleinerte Kopien des Kalino-App-Icons `apps/wichtel-advent/assets/icons/icon.png` aus dem Projekt „Wichtels Adventskalender" (Paket `Wichtels_Adventskalender_App_Icons_FINAL`, 23.11.2026, von der Rechteinhaberin bereitgestellt). Das Bild wurde nach ihrer Angabe mit ChatGPT erstellt; die Herkunftsangaben und die Hinweise zur kommerziellen Nutzung stehen in `apps/wichtel-advent/assets/branding/PROVENANCE.md` des App-Repositorys. |
 | `assets/icons/lock.svg`, `music.svg`, `hints.svg`, `gamepad.svg`, `door-star.svg` | Aus der Icon-Familie der Kalino-App (`apps/wichtel-advent/src/appIcons.ts`, dort als „selbst gezeichnete Vektoren, keine fremden Ressourcen" dokumentiert), unverändert als SVG-Dateien ausgegeben. |
+| `assets/icons/mail.svg` | Aus der Icon-Familie der Kalino-App (`appIcons.mail`), unverändert als SVG-Datei ausgegeben. |
+| `assets/icons/privacy.svg` | Eigene Zeichnung vom 23.11.2026 im Stil und in den Farben derselben Icon-Familie; keine externe Quelle. |
 | `assets/icons/snowglobe.svg` | Eigene Zeichnung vom 23.11.2026 im Stil und in den Farben derselben Icon-Familie; keine externe Quelle. |
 
 Schriften: Es werden nur die Systemschriften der Geräte verwendet (keine Webfonts, keine Drittanbieter-Ressourcen). Der Sternenhimmel besteht aus CSS.
