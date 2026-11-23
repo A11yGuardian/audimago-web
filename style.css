@@ -40,12 +40,6 @@ select option { color: #1f2a44; background: #fff; }
 .hero { position: relative; overflow: hidden; color: #fff; text-align: center; padding: 4.5rem 1rem 8rem;
   background:
     radial-gradient(40rem 22rem at 80% -10%, #4c6fd155, transparent 60%),
-    radial-gradient(2px 2px at 14% 30%, #fff9 50%, transparent 52%),
-    radial-gradient(2px 2px at 30% 70%, #fff7 50%, transparent 52%),
-    radial-gradient(2px 2px at 52% 18%, #fff9 50%, transparent 52%),
-    radial-gradient(2px 2px at 68% 58%, #fff8 50%, transparent 52%),
-    radial-gradient(2px 2px at 84% 28%, #fffa 50%, transparent 52%),
-    radial-gradient(2px 2px at 92% 74%, #fff8 50%, transparent 52%),
     linear-gradient(180deg, var(--night) 0%, var(--night-2) 100%); }
 .hero.small { padding: 3rem 1rem 6.5rem; }
 .hero img.icon { width: min(46vw, 10.5rem); height: auto; aspect-ratio: 1; border-radius: 23%; box-shadow: 0 0 0 1px #ffffff40, 0 1.6rem 3rem #0009, 0 0 5rem #7fa2ff40; }
