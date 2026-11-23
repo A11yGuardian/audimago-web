@@ -32,7 +32,7 @@ a:focus-visible, select:focus-visible, .button:focus-visible { outline: 3px soli
     linear-gradient(180deg, var(--night) 0%, var(--night-2) 100%);
   color: var(--parchment);
 }
-.brand { margin: 0; color: var(--gold); font-size: .8rem; font-weight: 800; letter-spacing: .22em; }
+.brand { margin: 0; color: var(--gold); font-size: .8rem; font-weight: 800; letter-spacing: .06em; }
 .top { width: min(100% - 2rem, 62rem); margin: 0 auto; padding: 1.1rem 0; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .top a.brand { text-decoration: none; }
 label { font-weight: 650; }
@@ -73,3 +73,4 @@ footer a { margin-right: 1rem; }
 @keyframes twinkle { 0%, 100% { opacity: 1; } 50% { opacity: .78; } }
 @media (prefers-reduced-motion: no-preference) { .hero img { animation: twinkle 5s ease-in-out infinite; } }
 @media (max-width: 35rem) { .top { align-items: flex-start; flex-direction: column; } .hero { padding-bottom: 3.5rem; } .sheet { padding-top: 1.8rem; } }
+h1 .store-name { display: block; margin-top: .25rem; font-size: .62em; font-weight: 400; color: var(--muted); }
