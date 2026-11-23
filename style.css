@@ -171,3 +171,5 @@ footer a { color: var(--muted); }
 
 /* Symbole aus der App-Icon-Familie */
 .feature img.ico { display: block; width: 4.2rem; height: 4.2rem; margin: 0 0 .8rem; filter: drop-shadow(0 .3rem .5rem #7a3f1740); }
+
+.feature img.ico.wide { width: auto; height: 4.2rem; }
