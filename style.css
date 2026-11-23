@@ -40,21 +40,21 @@ select option { color: #1f2a44; background: #fff; }
 .hero { position: relative; overflow: hidden; color: #fff; text-align: center; padding: 4.5rem 1rem 8rem;
   background:
     radial-gradient(40rem 22rem at 80% -10%, #4c6fd155, transparent 60%),
-    radial-gradient(34rem 20rem at 8% 10%, #e3b45e30, transparent 60%),
     radial-gradient(2px 2px at 14% 30%, #fff9 50%, transparent 52%),
     radial-gradient(2px 2px at 30% 70%, #fff7 50%, transparent 52%),
-    radial-gradient(2.5px 2.5px at 52% 18%, var(--gold-soft) 50%, transparent 52%),
+    radial-gradient(2px 2px at 52% 18%, #fff9 50%, transparent 52%),
     radial-gradient(2px 2px at 68% 58%, #fff8 50%, transparent 52%),
     radial-gradient(2px 2px at 84% 28%, #fffa 50%, transparent 52%),
-    radial-gradient(2.5px 2.5px at 92% 74%, var(--gold-soft) 50%, transparent 52%),
+    radial-gradient(2px 2px at 92% 74%, #fff8 50%, transparent 52%),
     linear-gradient(180deg, var(--night) 0%, var(--night-2) 100%); }
 .hero.small { padding: 3rem 1rem 6.5rem; }
-.hero img.icon { width: min(46vw, 10.5rem); height: auto; aspect-ratio: 1; border-radius: 23%; box-shadow: 0 0 0 1px #ffffff40, 0 1.6rem 3rem #0009, 0 0 5rem #ffd36a55; }
+.hero img.icon { width: min(46vw, 10.5rem); height: auto; aspect-ratio: 1; border-radius: 23%; box-shadow: 0 0 0 1px #ffffff40, 0 1.6rem 3rem #0009, 0 0 5rem #7fa2ff40; }
 .hero h1 { margin: 1.6rem 0 .5rem; font-family: var(--display); font-weight: 800; font-size: clamp(3rem, 11vw, 5.2rem); line-height: 1; letter-spacing: -.02em; background: linear-gradient(180deg, #fff 20%, var(--gold-soft)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .hero .lead { margin: 0 auto; max-width: 30ch; font-size: clamp(1.15rem, 3.4vw, 1.45rem); color: #e4eafa; }
 .hero .actions { margin-top: 2rem; display: flex; gap: .8rem; justify-content: center; flex-wrap: wrap; }
 .btn { display: inline-flex; align-items: center; gap: .5rem; padding: .85rem 1.4rem; border-radius: 999px; font-weight: 700; text-decoration: none; transition: transform .15s ease, box-shadow .15s ease; }
-.btn.primary { background: var(--gold); color: #2a1a06; box-shadow: 0 .6rem 1.4rem #e3b45e40; }
+.btn.primary { background: linear-gradient(180deg, #ffd54a, #ffbb12); color: #2a1a00; font-weight: 800; box-shadow: 0 0 0 1px #ffe58a, 0 .7rem 1.6rem #ffb80055; }
+.btn.primary:hover { background: linear-gradient(180deg, #ffdf6b, #ffc62e); }
 .btn.ghost { background: #ffffff1a; color: #fff; border: 1px solid #ffffff50; }
 .btn:hover { transform: translateY(-2px); }
 
@@ -68,7 +68,7 @@ select option { color: #1f2a44; background: #fff; }
 .card h2 { margin: 0 0 .5rem; font-family: var(--display); font-size: 1.35rem; line-height: 1.25; }
 .card p { margin: 0 0 1rem; color: var(--muted); }
 .card p:last-child { margin-bottom: 0; }
-.card .btn.primary { color: #2a1a06; }
+.card .btn.primary { color: #2a1a00; }
 
 /* Datenschutz-Seite */
 .doc { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: clamp(1.4rem, 4vw, 2.8rem); width: 100%; max-width: 46rem; margin: 0 auto; }
@@ -129,12 +129,20 @@ footer a { color: var(--muted); }
 .slide figure { margin: 0; }
 .slide img { display: block; width: 100%; height: auto; max-height: 70vh; object-fit: contain; background: var(--night); }
 .slide figcaption { padding: .9rem 1.2rem 1.1rem; background: var(--card); color: var(--ink); font-weight: 600; text-align: center; border-top: 1px solid var(--line); }
-.nav-btn { position: absolute; top: calc(50% - 2rem); width: 3rem; height: 3rem; border-radius: 50%; border: 1px solid #ffffff55; background: #14223ccc; color: #fff; font-size: 1.9rem; line-height: 1; cursor: pointer; display: grid; place-items: center; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
-.nav-btn.prev { left: .8rem; } .nav-btn.next { right: .8rem; }
-.nav-btn:disabled { opacity: .35; cursor: default; }
+.nav-btn { position: absolute; top: calc(50% - 2.1rem); width: 3.2rem; height: 3.2rem; padding: 0; border-radius: 50%; border: 1px solid #ffffff66; background: #ffffffd9; color: var(--night); cursor: pointer; display: grid; place-items: center; box-shadow: 0 .4rem 1.2rem #0006; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); transition: transform .15s ease, background .15s ease, opacity .15s ease; }
+.nav-btn svg { width: 1.5rem; height: 1.5rem; fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+.nav-btn:hover:not(:disabled) { background: #fff; transform: scale(1.07); }
+.nav-btn.prev { left: .9rem; } .nav-btn.next { right: .9rem; }
+.nav-btn:disabled { opacity: 0; pointer-events: none; }
 .nav-btn:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 .dots { display: flex; justify-content: center; gap: .5rem; margin-top: 1rem; flex-wrap: wrap; }
-.dots button { width: 1.1rem; height: 1.1rem; padding: 0; border-radius: 50%; border: 2px solid var(--gold); background: transparent; cursor: pointer; }
-.dots button[aria-current="true"] { background: var(--gold); }
+.dots button { width: .7rem; height: .7rem; padding: 0; border-radius: 999px; border: 0; background: var(--line); cursor: pointer; transition: width .2s ease, background .2s ease; position: relative; }
+.dots button::after { content: ""; position: absolute; inset: -.6rem -.25rem; }
+.dots button[aria-current="true"] { width: 2rem; background: var(--gold); }
 .dots button:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Sprachen mit Flaggen */
+.langs { list-style: none; padding: 0; margin: 1.1rem 0 0; display: grid; gap: .8rem; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); }
+.langs li { display: flex; align-items: center; gap: .8rem; background: var(--card); border: 1px solid var(--line); border-radius: 1rem; padding: .75rem 1rem; font-weight: 700; box-shadow: var(--shadow); }
+.flag { flex: none; width: 2.4rem; height: 1.6rem; border-radius: .3rem; box-shadow: 0 0 0 1px #00000026, 0 .2rem .5rem #0003; overflow: hidden; }

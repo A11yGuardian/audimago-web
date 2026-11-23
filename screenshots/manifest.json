@@ -1,7 +1,7 @@
 {
   "slides": [
-    { "src": "screenshots/01.jpg", "alt": "Der Holzkalender mit 25 Türchen. Die ersten drei sind geöffnet, Türchen 4 leuchtet.", "caption": "Der Adventskalender mit 25 Türchen", "width": 1600, "height": 1068 },
-    { "src": "screenshots/02.jpg", "alt": "Die gemütliche Wichtelstube mit Tannenbaum, Kamin, Kalenderschrank und Wichtel Kalino.", "caption": "Kalinos gemütliche Stube", "width": 1600, "height": 1068 },
+    { "src": "screenshots/01.jpg", "alt": "Der Holzkalender mit 24 Türchen und einer Schublade mit Fragezeichen für die Überraschung. Die ersten drei Türchen sind geöffnet, Türchen 4 leuchtet.", "caption": "24 Türchen und eine Überraschung", "width": 1600, "height": 1068 },
+    { "src": "screenshots/02.jpg", "alt": "Die gemütliche Wichtelstube mit Tannenbaum, Kamin, Kalenderschrank und Wichtel Kalino.", "caption": "Die Stube wird mit jedem Türchen gemütlicher", "width": 1600, "height": 1068 },
     { "src": "screenshots/03.jpg", "alt": "Das Musikmenü mit drei Schallplatten und einem Abspielknopf neben einem Plattenspieler.", "caption": "Weihnachtliche Musik zum Auswählen", "width": 1600, "height": 1068 },
     { "src": "screenshots/04.jpg", "alt": "Ein Tannenbaum, den das Kind mit Anhängern wie Blume, Stern und Herz schmückt.", "caption": "Den Weihnachtsbaum schmücken", "width": 1600, "height": 1068 },
     { "src": "screenshots/05.jpg", "alt": "Eine Anleitung erklärt in Bildern die Aufgabe: Bau einen Schneemann!", "caption": "Die Aufgabe wird in Bildern erklärt", "width": 1600, "height": 1068 },

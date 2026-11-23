@@ -20,6 +20,18 @@
     return node;
   }
 
+  function chevron(d) {
+    const ns = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(ns, 'svg');
+    svg.setAttribute('viewBox', '0 0 24 24');
+    svg.setAttribute('aria-hidden', 'true');
+    svg.setAttribute('focusable', 'false');
+    const path = document.createElementNS(ns, 'path');
+    path.setAttribute('d', d);
+    svg.append(path);
+    return svg;
+  }
+
   function build(slides) {
     const track = el('ul', { class: 'track', tabindex: '0', 'aria-label': 'Einblicke in die App. Mit den Pfeiltasten blättern.' });
     slides.forEach((s, i) => {
@@ -33,8 +45,10 @@
       track.append(li);
     });
 
-    const prev = el('button', { type: 'button', class: 'nav-btn prev', 'aria-label': 'Vorheriges Bild' }, '‹');
-    const next = el('button', { type: 'button', class: 'nav-btn next', 'aria-label': 'Nächstes Bild' }, '›');
+    const prev = el('button', { type: 'button', class: 'nav-btn prev', 'aria-label': 'Vorheriges Bild' });
+    const next = el('button', { type: 'button', class: 'nav-btn next', 'aria-label': 'Nächstes Bild' });
+    prev.append(chevron('M15 5l-7 7 7 7'));
+    next.append(chevron('M9 5l7 7-7 7'));
     const dots = el('div', { class: 'dots' });
     const dotButtons = slides.map((_, i) => {
       const b = el('button', { type: 'button', 'aria-label': `Bild ${i + 1} von ${slides.length}` });
