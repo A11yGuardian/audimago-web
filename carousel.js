@@ -1,0 +1,71 @@
+// Bilderkarussell: liest screenshots/manifest.json und baut daraus ein Karussell.
+// Ohne Einträge bleibt der Bereich verborgen. Keine Fremdbibliotheken.
+(() => {
+  const section = document.querySelector('#einblicke');
+  const root = document.querySelector('#carousel');
+  if (!section || !root) return;
+
+  fetch('screenshots/manifest.json', { cache: 'no-cache' })
+    .then(r => (r.ok ? r.json() : null))
+    .then(data => {
+      const slides = data && Array.isArray(data.slides) ? data.slides.filter(s => s && typeof s.src === 'string') : [];
+      if (slides.length) build(slides);
+    })
+    .catch(() => {});
+
+  function el(tag, attrs = {}, text) {
+    const node = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) node.setAttribute(k, v);
+    if (text) node.textContent = text;
+    return node;
+  }
+
+  function build(slides) {
+    const track = el('ul', { class: 'track', tabindex: '0', 'aria-label': 'Einblicke in die App. Mit den Pfeiltasten blättern.' });
+    slides.forEach((s, i) => {
+      const li = el('li', { class: 'slide', role: 'group', 'aria-roledescription': 'Bild', 'aria-label': `${i + 1} von ${slides.length}` });
+      const fig = el('figure');
+      const img = el('img', { src: s.src, alt: s.alt || '', loading: i === 0 ? 'eager' : 'lazy', decoding: 'async' });
+      if (s.width && s.height) { img.setAttribute('width', String(s.width)); img.setAttribute('height', String(s.height)); }
+      fig.append(img);
+      if (s.caption) fig.append(el('figcaption', {}, s.caption));
+      li.append(fig);
+      track.append(li);
+    });
+
+    const prev = el('button', { type: 'button', class: 'nav-btn prev', 'aria-label': 'Vorheriges Bild' }, '‹');
+    const next = el('button', { type: 'button', class: 'nav-btn next', 'aria-label': 'Nächstes Bild' }, '›');
+    const dots = el('div', { class: 'dots' });
+    const dotButtons = slides.map((_, i) => {
+      const b = el('button', { type: 'button', 'aria-label': `Bild ${i + 1} von ${slides.length}` });
+      b.addEventListener('click', () => goTo(i));
+      dots.append(b);
+      return b;
+    });
+
+    root.replaceChildren(track, prev, next, dots);
+    section.hidden = false;
+    const navLink = document.querySelector('#nav-einblicke');
+    if (navLink) navLink.hidden = false;
+
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const width = () => track.clientWidth;
+    const index = () => Math.max(0, Math.min(slides.length - 1, Math.round(track.scrollLeft / (width() || 1))));
+    function goTo(i) { track.scrollTo({ left: i * width(), behavior: reduce ? 'auto' : 'smooth' }); }
+    function update() {
+      const i = index();
+      dotButtons.forEach((b, n) => b.setAttribute('aria-current', n === i ? 'true' : 'false'));
+      prev.disabled = i === 0;
+      next.disabled = i === slides.length - 1;
+    }
+    prev.addEventListener('click', () => goTo(index() - 1));
+    next.addEventListener('click', () => goTo(index() + 1));
+    track.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
+    track.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight') { e.preventDefault(); goTo(index() + 1); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); goTo(index() - 1); }
+    });
+    window.addEventListener('resize', () => goTo(index()));
+    update();
+  }
+})();
