@@ -6,7 +6,7 @@
   <title>Kalino – Audimago</title>
   <meta name="description" content="Kalino ist ein interaktiver Adventskalender für Kinder mit 24 Türchen und einer Überraschung, für iPhone und iPad in elf Sprachen.">
   <link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="stylesheet" href="style.css?v=202611231830">
+  <link rel="stylesheet" href="style.css?v=202611232000">
 </head>
 <body>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -69,28 +69,30 @@
     <section id="geraete" class="block">
       <h2 class="sec" data-i18n="dev.h">Geräte</h2>
       <div class="grid two">
-        <article class="card device"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="14" y="4" width="20" height="40" rx="5" fill="none" stroke="currentColor" stroke-width="3"/><path d="M21 9h6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg><div><h3>iPhone</h3><p data-i18n="dev.iphone">Mit iOS 16.4 oder neuer.</p></div></article>
-        <article class="card device"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="9" width="38" height="30" rx="4" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="39" cy="24" r="1.600" fill="currentColor"/></svg><div><h3>iPad</h3><p data-i18n="dev.ipad">Mit iPadOS 16.4 oder neuer.</p></div></article>
+        <article class="card device"><img class="ico" src="assets/icons/iphone.svg" width="96" height="96" alt=""><div><h3>iPhone</h3><p data-i18n="dev.iphone">Mit iOS 16.4 oder neuer.</p></div></article>
+        <article class="card device"><img class="ico" src="assets/icons/ipad.svg" width="96" height="96" alt=""><div><h3>iPad</h3><p data-i18n="dev.ipad">Mit iPadOS 16.4 oder neuer.</p></div></article>
       </div>
       <p class="note" data-i18n="dev.note">Die App läuft im Querformat. Drehe dein Gerät quer, dann kann es losgehen.</p>
     </section>
 
     <section id="sprachen" class="block">
       <h2 class="sec" data-i18n="lang.h">Sprachen</h2>
+      <div class="lang-panel">
       <p class="note first" data-i18n="lang.note">Kalino gibt es in elf Sprachen. Die Sprache lässt sich im Elternbereich wechseln.</p>
       <ul class="langs">
-        <li lang="de"><svg class="flag" viewBox="0 0 3 2" aria-hidden="true" focusable="false"><use href="#f-de"/></svg><span>Deutsch</span></li>
-        <li lang="en"><svg class="flag" viewBox="0 0 3 2" aria-hidden="true" focusable="false"><use href="#f-en"/></svg><span>English</span></li>
-        <li lang="fr"><svg class="flag" viewBox="0 0 3 2" aria-hidden="true" focusable="false"><use href="#f-fr"/></svg><span>Français</span></li>
-        <li lang="es"><svg class="flag" viewBox="0 0 3 2" aria-hidden="true" focusable="false"><use href="#f-es"/></svg><span>Español</span></li>
-        <li lang="nl"><svg class="flag" viewBox="0 0 3 2" aria-hidden="true" focusable="false"><use href="#f-nl"/></svg><span>Nederlands</span></li>
-        <li lang="pt-PT"><svg class="flag" viewBox="0 0 3 2" aria-hidden="true" focusable="false"><use href="#f-pt"/></svg><span>Português</span></li>
-        <li lang="it"><svg class="flag" viewBox="0 0 3 2" aria-hidden="true" focusable="false"><use href="#f-it"/></svg><span>Italiano</span></li>
-        <li lang="pl"><svg class="flag" viewBox="0 0 3 2" aria-hidden="true" focusable="false"><use href="#f-pl"/></svg><span>Polski</span></li>
-        <li lang="da"><svg class="flag" viewBox="0 0 3 2" aria-hidden="true" focusable="false"><use href="#f-da"/></svg><span>Dansk</span></li>
-        <li lang="sv"><svg class="flag" viewBox="0 0 3 2" aria-hidden="true" focusable="false"><use href="#f-sv"/></svg><span>Svenska</span></li>
-        <li lang="nb"><svg class="flag" viewBox="0 0 3 2" aria-hidden="true" focusable="false"><use href="#f-nb"/></svg><span>Norsk bokmål</span></li>
+        <li lang="de"><svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><use href="#f-de"/></svg><span>Deutsch</span></li>
+        <li lang="en"><svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><use href="#f-en"/></svg><span>English</span></li>
+        <li lang="fr"><svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><use href="#f-fr"/></svg><span>Français</span></li>
+        <li lang="es"><svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><use href="#f-es"/></svg><span>Español</span></li>
+        <li lang="nl"><svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><use href="#f-nl"/></svg><span>Nederlands</span></li>
+        <li lang="pt-PT"><svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><use href="#f-pt"/></svg><span>Português</span></li>
+        <li lang="it"><svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><use href="#f-it"/></svg><span>Italiano</span></li>
+        <li lang="pl"><svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><use href="#f-pl"/></svg><span>Polski</span></li>
+        <li lang="da"><svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><use href="#f-da"/></svg><span>Dansk</span></li>
+        <li lang="sv"><svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><use href="#f-sv"/></svg><span>Svenska</span></li>
+        <li lang="nb"><svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><use href="#f-nb"/></svg><span>Norsk bokmål</span></li>
       </ul>
+      </div>
     </section>
 
     <section id="info" class="block">
@@ -112,7 +114,7 @@
     </section>
   </main>
   <footer><span>© Audimago</span><a href="datenschutz/" data-keeplang data-i18n="foot.priv">Datenschutz</a></footer>
-  <script src="i18n.js?v=202611231830" defer></script>
-  <script src="carousel.js?v=202611231830" defer></script>
+  <script src="i18n.js?v=202611232000" defer></script>
+  <script src="carousel.js?v=202611232000" defer></script>
 </body>
 </html>

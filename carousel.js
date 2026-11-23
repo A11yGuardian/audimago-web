@@ -5,7 +5,7 @@
   const root = document.querySelector('#carousel');
   if (!section || !root) return;
 
-  fetch('screenshots/manifest.json?v=202611231830', { cache: 'no-cache' })
+  fetch('screenshots/manifest.json?v=202611232000', { cache: 'no-cache' })
     .then(r => (r.ok ? r.json() : null))
     .then(data => {
       const slides = data && Array.isArray(data.slides) ? data.slides.filter(s => s && typeof s.src === 'string') : [];

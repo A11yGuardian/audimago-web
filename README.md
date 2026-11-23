@@ -10,6 +10,7 @@
 | `assets/icons/door-24.svg` | Eigene Abwandlung des App-Symbols `door-star`: Tür im selben Stil und in denselben Farben, statt des Sterns die Zahl 24 (eigene Zeichnung vom 23.11.2026). |
 | `assets/icons/mail.svg` | Aus der Icon-Familie der Kalino-App (`appIcons.mail`), unverändert als SVG-Datei ausgegeben. |
 | `assets/icons/privacy.svg` | Eigene Zeichnung vom 23.11.2026 im Stil und in den Farben derselben Icon-Familie; keine externe Quelle. |
+| `assets/icons/iphone.svg`, `ipad.svg` | Eigene Zeichnungen vom 23.11.2026 im Stil und in den Farben der Kalino-App-Icon-Familie (cremefarbenes Gerät, hellblauer Bildschirm, goldener Stern); keine externe Quelle. |
 | `assets/icons/snowglobe.svg` | Eigene Zeichnung vom 23.11.2026 im Stil und in den Farben derselben Icon-Familie; keine externe Quelle. |
 
 Schriften: Es werden nur die Systemschriften der Geräte verwendet (keine Webfonts, keine Drittanbieter-Ressourcen). Der Sternenhimmel besteht aus CSS.
