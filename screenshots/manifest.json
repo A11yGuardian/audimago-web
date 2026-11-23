@@ -1,12 +1,60 @@
 {
   "slides": [
-    { "src": "screenshots/01.jpg", "alt": "Der Holzkalender mit 24 Türchen und einer Schublade mit Fragezeichen für die Überraschung. Die ersten drei Türchen sind geöffnet, Türchen 4 leuchtet.", "caption": "24 Türchen und eine Überraschung", "width": 1600, "height": 1068 },
-    { "src": "screenshots/02.jpg", "alt": "Die gemütliche Wichtelstube mit Tannenbaum, Kamin, Kalenderschrank und Wichtel Kalino.", "caption": "Die Stube wird mit jedem Türchen gemütlicher", "width": 1600, "height": 1068 },
-    { "src": "screenshots/03.jpg", "alt": "Das Musikmenü mit drei Schallplatten und einem Abspielknopf neben einem Plattenspieler.", "caption": "Weihnachtliche Musik zum Auswählen", "width": 1600, "height": 1068 },
-    { "src": "screenshots/04.jpg", "alt": "Ein Tannenbaum, den das Kind mit Anhängern wie Blume, Stern und Herz schmückt.", "caption": "Den Weihnachtsbaum schmücken", "width": 1600, "height": 1068 },
-    { "src": "screenshots/05.jpg", "alt": "Eine Anleitung erklärt in Bildern die Aufgabe: Bau einen Schneemann!", "caption": "Die Aufgabe wird in Bildern erklärt", "width": 1600, "height": 1068 },
-    { "src": "screenshots/06.jpg", "alt": "Eine Winterlandschaft, in der Kinder einen Schneemann aus Teilen zusammensetzen.", "caption": "Einen Schneemann bauen", "width": 1600, "height": 1068 },
-    { "src": "screenshots/07.jpg", "alt": "Eine leuchtende Schneekugel mit funkelnden Sternen auf einem Holzschrank.", "caption": "Die Schneekugel funkelt", "width": 1600, "height": 1068 },
-    { "src": "screenshots/08.jpg", "alt": "Ein Backblech mit Glocke, Herz und Stern aus Teig, daneben Glasuren und Streusel.", "caption": "Plätzchen verzieren", "width": 1600, "height": 1068 }
+    {
+      "src": "screenshots/01.jpg",
+      "alt": "Der Holzkalender mit 24 Türchen und einer Schublade mit Fragezeichen für die Überraschung. Die ersten drei Türchen sind geöffnet, Türchen 4 leuchtet.",
+      "caption": "24 Türchen und eine Überraschung",
+      "width": 1600,
+      "height": 1041
+    },
+    {
+      "src": "screenshots/02.jpg",
+      "alt": "Die gemütliche Wichtelstube mit Tannenbaum, Kamin, Kalenderschrank und Wichtel Kalino.",
+      "caption": "Die Stube wird mit jedem Türchen gemütlicher",
+      "width": 1600,
+      "height": 1041
+    },
+    {
+      "src": "screenshots/03.jpg",
+      "alt": "Das Musikmenü mit drei Schallplatten und einem Abspielknopf neben einem Plattenspieler.",
+      "caption": "Weihnachtliche Musik zum Auswählen",
+      "width": 1600,
+      "height": 1041
+    },
+    {
+      "src": "screenshots/04.jpg",
+      "alt": "Ein Tannenbaum, den das Kind mit Anhängern wie Blume, Stern und Herz schmückt.",
+      "caption": "Den Weihnachtsbaum schmücken",
+      "width": 1600,
+      "height": 1041
+    },
+    {
+      "src": "screenshots/05.jpg",
+      "alt": "Eine Anleitung erklärt in Bildern die Aufgabe: Bau einen Schneemann!",
+      "caption": "Die Aufgabe wird in Bildern erklärt",
+      "width": 1600,
+      "height": 1041
+    },
+    {
+      "src": "screenshots/06.jpg",
+      "alt": "Eine Winterlandschaft, in der Kinder einen Schneemann aus Teilen zusammensetzen.",
+      "caption": "Einen Schneemann bauen",
+      "width": 1600,
+      "height": 1041
+    },
+    {
+      "src": "screenshots/07.jpg",
+      "alt": "Eine leuchtende Schneekugel mit funkelnden Sternen auf einem Holzschrank.",
+      "caption": "Die Schneekugel funkelt",
+      "width": 1600,
+      "height": 1041
+    },
+    {
+      "src": "screenshots/08.jpg",
+      "alt": "Ein Backblech mit Glocke, Herz und Stern aus Teig, daneben Glasuren und Streusel.",
+      "caption": "Plätzchen verzieren",
+      "width": 1600,
+      "height": 1041
+    }
   ]
 }
