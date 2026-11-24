@@ -1,26 +1,6 @@
-data processing addendum 
+Quelle: https://porkbun.com/legal/agreement/data_processing_addendum (abgerufen 24.11.2026, Textauszug)
 
- × 
-
- This website uses information gathering tools including cookies, and other similar technology. We use these tools to personalize content and ads, to analyze our website traffic, and to provide better website experience.
-We also share information about your use of our site with advertising and analytics partners. By selecting “Accept” you are providing your consent to our use of cookies and other similar technology in this way.
-You can withdraw your consent at any time by clicking on “Your Privacy Choices” in the website footer and changing your preferences. For more information, see our Privacy Policy .
-
- Analytics & Marketing 
- Helps us understand site usage and show relevant ads. 
-
- Support Chat 
- Powers our AI assistant and HelpScout support widget so we can assist you. 
-
- Accept All 
- Reject All 
- Save Choices 
-
- Data Processing Addendum
-
- Last Revised: October 13, 2026 
-
- This Data Processing Addendum (the “DPA”) is entered into by and between Porkbun LLC (“Porkbun” or “Processor”) and the customer identified in the applicable Porkbun account (“Customer”) (collectively, the “Parties”). This DPA is incorporated into and forms part of the Product Terms of Service and any other agreements between Customer and Porkbun governing the Services (collectively, the “Agreement”), and reflects the Parties’ agreement with respect to the Processing of Controller Data.
+This Data Processing Addendum (the “DPA”) is entered into by and between Porkbun LLC (“Porkbun” or “Processor”) and the customer identified in the applicable Porkbun account (“Customer”) (collectively, the “Parties”). This DPA is incorporated into and forms part of the Product Terms of Service and any other agreements between Customer and Porkbun governing the Services (collectively, the “Agreement”), and reflects the Parties’ agreement with respect to the Processing of Controller Data.
 
  In providing the Services to Customer pursuant to the Agreement, Porkbun may Process Personal Data on behalf of Customer and the Parties agree to comply with the following provisions with respect to any Personal Data, each acting reasonably and in good faith. This DPA supplements the Agreement and in the event of any conflict between the terms of this DPA and the terms of the Agreement, the terms of this DPA prevail with regard to the specific subject matter of this DPA. This DPA is effective on the Effective Date, and amends, supersedes and replaces any prior agreement relating to data processing and/or data protection entered into by the Parties.
 
