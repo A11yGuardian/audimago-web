@@ -79,7 +79,7 @@ function render(code) {
     <h2>${text.rightsTitle}</h2><p>${text.rights} <a href="mailto:support@audimago.com">support@audimago.com</a>.</p>
     <section lang="de" aria-label="Ergänzende Datenschutzinformationen auf Deutsch">
       <h2>Ergänzende Datenschutzinformationen auf Deutsch</h2>
-      <p>Die Übersetzungen dienen der Orientierung und wurden noch nicht fachlich geprüft. Bitte beachte auch diese deutschen Angaben.</p>
+      <p>Bitte beachte auch diese deutschen Angaben.</p>
       <p>Wenn du auf den Kalino-Seiten eine Sprache auswählst, speichern wir diese Auswahl unter „kalino-lang“ im lokalen Speicher deines Browsers. So bleibt deine Sprachwahl beim nächsten Besuch erhalten. Du kannst sie jederzeit ändern oder den Eintrag über die Browsereinstellungen löschen. Die Speicherung dient der von dir gewählten Sprachdarstellung (§ 25 Abs. 2 Nr. 2 TDDDG).</p>
       <p>Gegen eine Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO kannst du aus Gründen deiner besonderen Situation nach Art. 21 DSGVO Widerspruch einlegen. Du kannst dich bei einer Datenschutzaufsichtsbehörde beschweren, insbesondere beim Landesbeauftragten für den Datenschutz Niedersachsen.</p>
     </section>`;
