@@ -32,6 +32,6 @@ Das Karussell bleibt verborgen, solange `screenshots/manifest.json` keine Eintr�
 
 ## Sprachen der Startseite
 
-`i18n.js` enthält die Texte der Startseite in elf Sprachen (de, en, fr, es, nl, pt-PT, it, pl, da, sv, nb). Die Sprache kommt aus `?lang=`, danach aus der letzten Auswahl (Browser-Speicher `kalino-lang`), sonst aus der Browsersprache, sonst Englisch. Deutsch steht zusätzlich im HTML. Die Bildunterschriften des Karussells stehen unter `s1` bis `s7`, in der Reihenfolge der Bilder in `screenshots/manifest.json`.
+`i18n.js` enthält die Texte der Startseite in dreizehn Sprachen (de, en, fr, es, nl, pt-PT, it, pl, da, sv, nb, fi, el). Die Sprache kommt aus `?lang=`, danach aus der letzten Auswahl (Browser-Speicher `kalino-lang`), sonst aus der Browsersprache, sonst Englisch. Deutsch steht zusätzlich im HTML. Die Bildunterschriften des Karussells stehen unter `s1` bis `s7`, in der Reihenfolge der Bilder in `screenshots/manifest.json`.
 
 Hinweis: Die Übersetzungen wurden mit KI erstellt und nicht von Muttersprachlerinnen oder Muttersprachlern geprüft. Vor der Veröffentlichung gegenlesen lassen.
