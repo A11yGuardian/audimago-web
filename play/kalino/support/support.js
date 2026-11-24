@@ -2,7 +2,7 @@
 const T = {
   de: { language: 'Sprache', name: 'Kalino', title: 'Support', intro: 'Du hast eine Frage oder brauchst Hilfe mit Kalino? Schreib uns eine E-Mail. Beschreibe bitte kurz, was passiert ist und welches iPhone oder iPad du verwendest.', privacy: 'Datenschutz' },
   en: { language: 'Language', name: 'Kalino', title: 'Support', intro: 'Do you have a question or need help with Kalino? Send us an email. Please briefly describe what happened and which iPhone or iPad you use.', privacy: 'Privacy' },
-  fr: { language: 'Langue', name: 'Kito', title: 'Assistance', intro: 'Vous avez une question ou besoin d’aide avec Kito ? Écrivez-nous un e-mail. Décrivez brièvement ce qui s’est passé et quel iPhone ou iPad vous utilisez.', privacy: 'Confidentialité' },
+  fr: { language: 'Langue', name: 'La maison du lutin', title: 'Assistance', heading: 'Assistance – La maison du lutin', intro: 'Vous avez une question ou besoin d’aide avec La maison du lutin ? Écrivez-nous un e-mail. Décrivez brièvement ce qui s’est passé et quel iPhone ou iPad vous utilisez.', privacy: 'Confidentialité' },
   es: { language: 'Idioma', name: 'Kalino', title: 'Soporte', intro: '¿Tienes una pregunta o necesitas ayuda con Kalino? Escríbenos un correo. Describe brevemente qué ha pasado y qué iPhone o iPad usas.', privacy: 'Privacidad' },
   nl: { language: 'Taal', name: 'Kalino', title: 'Ondersteuning', intro: 'Heb je een vraag of hulp nodig met Kalino? Stuur ons een e-mail. Beschrijf kort wat er is gebeurd en welke iPhone of iPad je gebruikt.', privacy: 'Privacy' },
   'pt-PT': { language: 'Idioma', name: 'Kalino', title: 'Apoio', intro: 'Tem uma dúvida ou precisa de ajuda com o Kalino? Envie-nos um e-mail. Descreva brevemente o que aconteceu e que iPhone ou iPad utiliza.', privacy: 'Privacidade' },
@@ -35,10 +35,11 @@ function render(code) {
   document.title = `${t.title} – ${t.name} – Audimago`;
   selector.value = code;
   selector.parentElement.firstChild.textContent = `${t.language} `;
-  document.querySelector('#title').textContent = `${t.name} ${t.title}`;
+  const heading = t.heading || `${t.name} ${t.title}`;
+  document.querySelector('#title').textContent = heading;
   document.querySelector('#intro').textContent = t.intro;
   const mail = document.querySelector('#mail');
-  mail.setAttribute('href', `mailto:support@audimago.com?subject=${encodeURIComponent(`${t.name} ${t.title}`)}`);
+  mail.setAttribute('href', `mailto:support@audimago.com?subject=${encodeURIComponent(heading)}`);
   const priv = document.querySelector('#privacy');
   priv.textContent = t.privacy;
   priv.setAttribute('href', `../datenschutz/?lang=${code}`);

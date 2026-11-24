@@ -47,12 +47,12 @@
       'info.h': 'Privacy & contact', 'priv.t': 'Privacy', 'priv.d': 'How Kalino handles data. Available in thirteen languages.', 'priv.go': 'Read the privacy policy →', 'con.t': 'Contact', 'con.d': 'Questions or wishes about the app? Send us an email.', 'foot.priv': 'Privacy'
     },
     fr: {
-      title: 'Kito – Audimago', 'meta.desc': "Kito est un calendrier de l'Avent interactif pour les enfants, avec 24 portes et une surprise, pour iPhone et iPad en treize langues.",
+      title: 'La maison du lutin – Audimago', 'meta.desc': "La maison du lutin est un calendrier de l'Avent interactif pour les enfants, avec 24 portes et une surprise, pour iPhone et iPad en treize langues.",
       'nav.aria': 'Navigation principale', 'nav.desc': 'Description', 'nav.shots': 'Aperçu', 'nav.devices': 'Appareils', 'nav.langs': 'Langues', 'nav.info': 'Confidentialité et contact', 'ui.language': 'Langue',
-      name: 'Kito', 'hero.alt': "Kito, le petit lutin au bonnet rouge, avec une lanterne et un calendrier de l'Avent", 'hero.lead': "Le calendrier de l'Avent interactif pour les enfants", 'hero.more': 'En savoir plus',
+      name: 'La maison du lutin', 'hero.alt': "Le petit lutin au bonnet rouge, avec une lanterne et un calendrier de l'Avent", 'hero.lead': "Le calendrier de l'Avent interactif pour les enfants", 'hero.more': 'En savoir plus',
       fact1: '24 portes + une surprise', fact2: 'Sans publicité', fact3: 'Sans compte utilisateur', fact4: "Les données restent sur l'appareil",
       'desc.h': 'Description',
-      'desc.p1': "Le lutin Kito invite les enfants à vivre l'Avent ensemble. Derrière chacune des 24 portes les attend une petite aventure à partager : essuyer le givre, décorer le sapin de Noël, découper et décorer des biscuits, construire une maisonnette pour les oiseaux ou dessiner une lettre au Père Noël. À chaque porte, la maison de Kito change et devient un peu plus douillette. À la fin, une surprise est au rendez-vous.",
+      'desc.p1': "Le petit lutin invite les enfants à vivre l'Avent ensemble. Derrière chacune des 24 portes les attend une petite aventure à partager : essuyer le givre, décorer le sapin de Noël, découper et décorer des biscuits, construire une maisonnette pour les oiseaux ou dessiner une lettre au Père Noël. À chaque porte, la maison du lutin change et devient un peu plus douillette. À la fin, une surprise est au rendez-vous.",
       'desc.p2': "Les enfants touchent, glissent et tirent. Chaque tâche est accompagnée d'un conseil en images et en texte, et des boules à neige scintillantes marquent des étapes pour montrer ce qui a déjà été accompli. L'application est conçue pour les enfants d'âge préscolaire, autour de 5 ans.",
       'f1.t': '24 portes et une surprise', 'f1.d': "Du 1er au 24 décembre, une nouvelle aventure attend chaque jour, et le 25 décembre une surprise.",
       'f2.t': 'Des conseils pour comprendre', 'f2.d': 'Chaque tâche est expliquée en images et en quelques mots. De petites animations montrent comment toucher, glisser ou tirer.',
@@ -65,8 +65,8 @@
       'shots.h': 'Aperçu', 'shots.region': "Images de l'application", 'shots.track': "Aperçu de l'application. Utilisez les flèches du clavier pour naviguer.", 'shots.prev': 'Image précédente', 'shots.next': 'Image suivante', 'shots.dot': 'Image {n} sur {total}',
       s1: '24 portes et une surprise', s2: 'La maison devient plus douillette à chaque porte', s3: 'De la musique de Noël au choix', s4: 'Décorer le sapin de Noël', s5: 'La tâche est expliquée en images', s6: 'Construire un bonhomme de neige', s7: 'Décorer des biscuits',
       'dev.h': 'Appareils', 'dev.iphone': 'Avec iOS 16.4 ou plus récent.', 'dev.ipad': 'Avec iPadOS 16.4 ou plus récent.', 'dev.note': "L'application fonctionne en mode paysage. Tournez votre appareil, et c'est parti.",
-      'lang.h': 'Langues', 'lang.note': "Kito existe en treize langues. La langue se change dans l'espace parents.",
-      'info.h': 'Confidentialité et contact', 'priv.t': 'Confidentialité', 'priv.d': 'Comment Kito traite les données. À lire en treize langues.', 'priv.go': 'Lire la politique de confidentialité →', 'con.t': 'Contact', 'con.d': "Une question ou une envie à propos de l'application ? Écrivez-nous un e-mail.", 'foot.priv': 'Confidentialité'
+      'lang.h': 'Langues', 'lang.note': "La maison du lutin existe en treize langues. La langue se change dans l'espace parents.",
+      'info.h': 'Confidentialité et contact', 'priv.t': 'Confidentialité', 'priv.d': 'Comment l’application traite les données. À lire en treize langues.', 'priv.go': 'Lire la politique de confidentialité →', 'con.t': 'Contact', 'con.d': "Une question ou une envie à propos de l'application ? Écrivez-nous un e-mail.", 'foot.priv': 'Confidentialité'
     },
     es: {
       title: 'Kalino – Audimago', 'meta.desc': 'Kalino es un calendario de Adviento interactivo para niños con 24 puertas y una sorpresa, para iPhone y iPad en trece idiomas.',
