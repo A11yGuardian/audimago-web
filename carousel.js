@@ -5,7 +5,7 @@
   const root = document.querySelector('#carousel');
   if (!section || !root) return;
 
-  fetch('screenshots/manifest.json?v=202611232030', { cache: 'no-cache' })
+  fetch(new URL('../../screenshots/manifest.json?v=202611232030', location.href), { cache: 'no-cache' })
     .then(r => (r.ok ? r.json() : null))
     .then(data => {
       const slides = data && Array.isArray(data.slides) ? data.slides.filter(s => s && typeof s.src === 'string') : [];
@@ -43,7 +43,7 @@
     slides.forEach((s, i) => {
       const li = el('li', { class: 'slide', role: 'group', 'aria-label': `${i + 1} / ${slides.length}` });
       const fig = el('figure');
-      const img = el('img', { src: s.src, alt: altOf(s, i), loading: i === 0 ? 'eager' : 'lazy', decoding: 'async' });
+      const img = el('img', { src: new URL(s.src, new URL('../../', location.href)).href, alt: altOf(s, i), loading: i === 0 ? 'eager' : 'lazy', decoding: 'async' });
       if (s.width && s.height) { img.setAttribute('width', String(s.width)); img.setAttribute('height', String(s.height)); }
       fig.append(img);
       const cap = el('figcaption', {}, captionOf(s, i));
