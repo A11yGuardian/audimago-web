@@ -54,7 +54,7 @@ select option { color: #1f2a44; background: #fff; }
 .hero .lead { margin: 0 auto; max-width: 30ch; font-size: clamp(1.15rem, 3.4vw, 1.45rem); color: #e4eafa; }
 .hero .actions { margin-top: 2rem; display: flex; gap: .8rem; justify-content: center; flex-wrap: wrap; }
 .btn { display: inline-flex; align-items: center; gap: .5rem; padding: .85rem 1.4rem; border-radius: 999px; font-weight: 700; text-decoration: none; transition: transform .15s ease, box-shadow .15s ease; }
-.btn.primary { background: var(--gold); color: #2a1a00; font-weight: 800; box-shadow: 0 .7rem 1.6rem #e3b45e55; }
+.btn.primary { background: var(--gold); color: #2a1a00; font-weight: 800; }
 .btn.primary:hover { filter: brightness(1.08); }
 .btn.ghost { background: #ffffff1a; color: #fff; border: 1px solid #ffffff50; }
 .btn:hover { transform: translateY(-2px); }
@@ -137,7 +137,7 @@ footer a { color: var(--muted); }
 .slide figure { margin: 0; }
 .slide img { display: block; width: 100%; height: auto; max-height: 70vh; object-fit: contain; background: #14223c; }
 .slide figcaption { padding: .9rem 1.2rem 1.1rem; background: var(--card); color: var(--ink); font-weight: 600; text-align: center; border-top: 1px solid var(--line); }
-.nav-btn { width: 3.2rem; height: 3.2rem; padding: 0; border-radius: 50%; border: 0; background: var(--gold); color: #2a1a00; cursor: pointer; display: grid; place-items: center; box-shadow: 0 .4rem 1rem #e3b45e55; transition: transform .15s ease, filter .15s ease, opacity .15s ease; }
+.nav-btn { width: 3.2rem; height: 3.2rem; padding: 0; border-radius: 50%; border: 0; background: var(--gold); color: #2a1a00; cursor: pointer; display: grid; place-items: center; transition: transform .15s ease, filter .15s ease, opacity .15s ease; }
 .nav-btn svg { width: 1.5rem; height: 1.5rem; fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
 .nav-btn:hover:not(:disabled) { filter: brightness(1.08); transform: scale(1.07); }
 .nav-btn:disabled { opacity: 0; pointer-events: none; }
