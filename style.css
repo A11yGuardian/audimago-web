@@ -159,7 +159,7 @@ footer a { color: var(--muted); }
 .langs li:hover { transform: translateY(-4px); }
 .flag { flex: none; width: 4.2rem; height: 4.2rem; border-radius: 50%; box-shadow: 0 0 0 3px #ffffff40, 0 .5rem 1rem #0006; overflow: hidden; transition: box-shadow .18s ease; }
 .langs li:hover .flag { box-shadow: 0 0 0 3px var(--gold), 0 .6rem 1.2rem #0007; }
-@media (max-width: 62rem) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 44rem) { .grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 34rem) { .grid { grid-template-columns: 1fr; } }
 @media (max-width: 40rem) {
   .carousel { grid-template-columns: auto minmax(0, 1fr) auto; }
