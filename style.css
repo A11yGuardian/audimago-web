@@ -74,7 +74,6 @@ select option { color: #1f2a44; background: #fff; }
 /* Datenschutz-Seite */
 .doc { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: clamp(1.4rem, 4vw, 2.8rem); width: 100%; max-width: 46rem; margin: 0 auto; }
 .doc h1 { margin: 0 0 1.2rem; font-family: var(--display); font-weight: 800; font-size: clamp(1.8rem, 5vw, 2.5rem); line-height: 1.15; letter-spacing: -.01em; }
-.doc h1 .store-name { display: block; margin-top: .35rem; font-size: .6em; font-weight: 600; color: var(--muted); letter-spacing: 0; }
 .doc h2 { margin: 2.2rem 0 .5rem; padding-top: 1.4rem; border-top: 1px solid var(--line); font-family: var(--display); font-size: 1.2rem; line-height: 1.3; }
 .doc h1 + h2 { border-top: 0; padding-top: 0; margin-top: 1.6rem; }
 .doc p { margin: 0 0 .9rem; }
@@ -282,3 +281,7 @@ body { overflow-x: clip; }
 .bar .in { min-height: 4.4rem; padding-block: .5rem; }
 .bar label { gap: 1.1rem; }
 @media (max-width: 36rem) { .bar .in { min-height: 4rem; } }
+
+/* Datenschutz, Impressum, Support: Icon steht still und die Seite behält ihre Breite, damit beim Sprachwechsel nichts springt */
+.hero.small img.icon { animation: none; transform: none; }
+html { scrollbar-gutter: stable; }

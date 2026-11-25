@@ -32,7 +32,7 @@ function initialLanguage() {
 function render(code) {
   const t = T[code];
   document.documentElement.lang = code;
-  document.title = `${t.title} – ${t.name} – Audimago`;
+  document.title = `${t.title} – ${t.name}`;
   selector.value = code;
   selector.parentElement.firstChild.textContent = `${t.language} `;
   const heading = t.heading || `${t.name} ${t.title}`;
