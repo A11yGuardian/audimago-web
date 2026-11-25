@@ -223,3 +223,8 @@ footer a { color: var(--muted); }
 .tablet .play svg { width: 22%; height: auto; filter: drop-shadow(0 .3rem .8rem #0009); transition: transform .15s ease; }
 .tablet .play:hover svg { transform: scale(1.08); }
 .tablet .play:focus-visible { outline: 3px solid var(--focus); outline-offset: -6px; }
+
+/* Perspektive: JavaScript kippt die Bildschirmfläche passend zum schräg stehenden iPad */
+.tablet.warp .screen { left: 0; top: 0; width: 626px; height: 469px; clip-path: none; background: #000; overflow: hidden; transform-origin: 0 0; will-change: transform; }
+.tablet.warp .play svg { width: 24%; }
+.tablet.warp video { clip-path: inset(5px round 22px); }
