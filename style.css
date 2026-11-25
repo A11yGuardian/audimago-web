@@ -277,3 +277,8 @@ body { overflow-x: clip; }
 /* Zweite Zeile unter der Bildbeschreibung (Aufgabe und Hinweis) */
 .slide-note { margin: .3rem 0 0; font-weight: 500; font-size: .95em; color: var(--muted); }
 .slide-note[hidden] { display: none; }
+
+/* Kopfleiste: mehr Luft, damit der Fokusrahmen am Sprachfeld weder das Wort „Sprache“ noch den Rand berührt */
+.bar .in { min-height: 4.4rem; padding-block: .5rem; }
+.bar label { gap: 1.1rem; }
+@media (max-width: 36rem) { .bar .in { min-height: 4rem; } }

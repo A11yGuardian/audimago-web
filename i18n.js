@@ -3,9 +3,9 @@
 (() => {
   const T = {
     de: {
-      title: 'Kalino – Audimago', 'meta.desc': 'Kalino ist ein interaktiver Adventskalender für Kinder mit 24 Türchen und einer Überraschung, für iPhone und iPad in dreizehn Sprachen.',
+      title: "Kalinos Wichtelstube – Audimago", 'meta.desc': 'Kalino ist ein interaktiver Adventskalender für Kinder mit 24 Türchen und einer Überraschung, für iPhone und iPad in dreizehn Sprachen.',
       'nav.aria': 'Hauptnavigation', 'nav.desc': 'Beschreibung', 'nav.shots': 'Einblicke', 'nav.devices': 'Geräte', 'nav.langs': 'Sprachen', 'nav.info': 'Datenschutz & Kontakt', 'ui.language': 'Sprache',
-      name: 'Kalinos Wichtelstube', 'hero.alt': 'Kalino, der kleine Wichtel mit roter Mütze, Laterne und Adventskalender', 'hero.lead': 'Adventskalender für Kinder', 'hero.more': 'Mehr erfahren',
+      name: "Kalinos Wichtelstube", 'hero.alt': 'Kalino, der kleine Wichtel mit roter Mütze, Laterne und Adventskalender', 'hero.lead': "Adventskalender für Kinder", 'hero.more': 'Mehr erfahren',
       fact1: '24 Türchen + Überraschung', fact2: 'Keine Werbung', fact3: 'Kein Benutzerkonto', fact4: 'Daten bleiben auf dem Gerät',
       'desc.h': 'Beschreibung',
       'desc.p1': "Wichtel Kalino lädt Kinder ein, gemeinsam den Advent zu erleben. Hinter 24 Türchen warten liebevoll gestaltete Spiele, kleine Rätsel und kreative Aufgaben darauf, entdeckt zu werden. Die Kinder tippen, wischen und ziehen, und mit jeder geschafften Aufgabe wird Kalinos Wichtelstube ein Stück gemütlicher. Was im 25. Türchen steckt, bleibt eine Überraschung. Kalino kommt ohne Werbung und ohne Benutzerkonto aus, und alle Daten bleiben auf dem Gerät. Im geschützten Elternbereich stellen Erwachsene Sprache und Spielmodus ein. Gedacht ist die App für Kinder im Vorschulalter, um die 5 Jahre.",
@@ -22,9 +22,9 @@
       'info.h': 'Datenschutz & Kontakt', 'priv.t': 'Datenschutz', 'priv.d': 'So geht Kalino mit Daten um. In dreizehn Sprachen zum Nachlesen.', 'priv.go': 'Datenschutzerklärung lesen →', 'con.t': 'Kontakt', 'con.d': 'Fragen oder Wünsche zur App? Schreib uns eine E-Mail.', 'foot.priv': 'Datenschutz'
     },
     en: {
-      title: 'Kalino – Audimago', 'meta.desc': 'Kalino is an interactive Advent calendar for children with 24 doors and a surprise, for iPhone and iPad in thirteen languages.',
+      title: "Kalino's Elf House – Audimago", 'meta.desc': 'Kalino is an interactive Advent calendar for children with 24 doors and a surprise, for iPhone and iPad in thirteen languages.',
       'nav.aria': 'Main navigation', 'nav.desc': 'Description', 'nav.shots': 'Previews', 'nav.devices': 'Devices', 'nav.langs': 'Languages', 'nav.info': 'Privacy & contact', 'ui.language': 'Language',
-      name: 'Kalino', 'hero.alt': 'Kalino, the little elf with a red hat, a lantern and an Advent calendar', 'hero.lead': 'The interactive Advent calendar for children', 'hero.more': 'Learn more',
+      name: "Kalino's Elf House", 'hero.alt': 'Kalino, the little elf with a red hat, a lantern and an Advent calendar', 'hero.lead': "Advent Calendar for Kids", 'hero.more': 'Learn more',
       fact1: '24 doors + a surprise', fact2: 'No ads', fact3: 'No user account', fact4: 'Data stays on the device',
       'desc.h': 'Description',
       'desc.p1': "Elf Kalino invites children to experience Advent together. Behind 24 doors, lovingly designed games, little puzzles and creative activities are waiting to be discovered. Children tap, swipe and drag, and with every task they finish, Kalino's cottage becomes a little cosier. What is hiding behind door 25 stays a surprise. Kalino comes without ads and without a user account, and all data stays on the device. In the protected parent area, adults set the language and play mode. The app is made for preschool children, around 5 years old.",
@@ -41,9 +41,9 @@
       'info.h': 'Privacy & contact', 'priv.t': 'Privacy', 'priv.d': 'How Kalino handles data. Available in thirteen languages.', 'priv.go': 'Read the privacy policy →', 'con.t': 'Contact', 'con.d': 'Questions or wishes about the app? Send us an email.', 'foot.priv': 'Privacy'
     },
     fr: {
-      title: 'La maison du lutin – Audimago', 'meta.desc': "La maison du lutin est un calendrier de l'Avent interactif pour les enfants, avec 24 portes et une surprise, pour iPhone et iPad en treize langues.",
+      title: "La maison du lutin – Audimago", 'meta.desc': "La maison du lutin est un calendrier de l'Avent interactif pour les enfants, avec 24 portes et une surprise, pour iPhone et iPad en treize langues.",
       'nav.aria': 'Navigation principale', 'nav.desc': 'Description', 'nav.shots': 'Aperçu', 'nav.devices': 'Appareils', 'nav.langs': 'Langues', 'nav.info': 'Confidentialité et contact', 'ui.language': 'Langue',
-      name: 'La maison du lutin', 'hero.alt': "Le petit lutin au bonnet rouge, avec une lanterne et un calendrier de l'Avent", 'hero.lead': "Le calendrier de l'Avent interactif pour les enfants", 'hero.more': 'En savoir plus',
+      name: "La maison du lutin", 'hero.alt': "Le petit lutin au bonnet rouge, avec une lanterne et un calendrier de l'Avent", 'hero.lead': "Calendrier de l’Avent enfants", 'hero.more': 'En savoir plus',
       fact1: '24 portes + une surprise', fact2: 'Sans publicité', fact3: 'Sans compte utilisateur', fact4: "Les données restent sur l'appareil",
       'desc.h': 'Description',
       'desc.p1': "Le petit lutin invite les enfants à vivre l'Avent ensemble. Derrière 24 portes, des jeux soignés, de petites énigmes et des activités créatives n'attendent que d'être découverts. Les enfants touchent, glissent et tirent, et à chaque tâche réussie, la maison du lutin devient un peu plus douillette. Ce qui se cache derrière la 25e porte reste une surprise. Kalino se passe de publicité et de compte utilisateur, et toutes les données restent sur l'appareil. Dans l'espace parents protégé, les adultes choisissent la langue et le mode de jeu. L'application est conçue pour les enfants d'âge préscolaire, autour de 5 ans.",
@@ -60,9 +60,9 @@
       'info.h': 'Confidentialité et contact', 'priv.t': 'Confidentialité', 'priv.d': 'Comment l’application traite les données. À lire en treize langues.', 'priv.go': 'Lire la politique de confidentialité →', 'con.t': 'Contact', 'con.d': "Une question ou une envie à propos de l'application ? Écrivez-nous un e-mail.", 'foot.priv': 'Confidentialité'
     },
     es: {
-      title: 'Kalino – Audimago', 'meta.desc': 'Kalino es un calendario de Adviento interactivo para niños con 24 ventanitas y una sorpresa, para iPhone y iPad en trece idiomas.',
+      title: "La casita de Kalino – Audimago", 'meta.desc': 'Kalino es un calendario de Adviento interactivo para niños con 24 ventanitas y una sorpresa, para iPhone y iPad en trece idiomas.',
       'nav.aria': 'Navegación principal', 'nav.desc': 'Descripción', 'nav.shots': 'Vistas', 'nav.devices': 'Dispositivos', 'nav.langs': 'Idiomas', 'nav.info': 'Privacidad y contacto', 'ui.language': 'Idioma',
-      name: 'Kalino', 'hero.alt': 'Kalino, el pequeño elfo con gorro rojo, un farol y un calendario de Adviento', 'hero.lead': 'El calendario de Adviento interactivo para niños', 'hero.more': 'Saber más',
+      name: "La casita de Kalino", 'hero.alt': 'Kalino, el pequeño elfo con gorro rojo, un farol y un calendario de Adviento', 'hero.lead': "Calendario de Adviento infantil", 'hero.more': 'Saber más',
       fact1: '24 ventanitas + una sorpresa', fact2: 'Sin publicidad', fact3: 'Sin cuenta de usuario', fact4: 'Los datos se quedan en el dispositivo',
       'desc.h': 'Descripción',
       'desc.p1': "El elfo Kalino invita a los niños a vivir juntos el Adviento. Detrás de 24 ventanitas esperan, para ser descubiertos, juegos hechos con cariño, pequeños acertijos y actividades creativas. Los niños tocan, deslizan y arrastran, y con cada tarea terminada la casita de Kalino se vuelve un poco más acogedora. Lo que hay en la ventanita 25 sigue siendo una sorpresa. Kalino no lleva publicidad ni cuenta de usuario, y todos los datos se quedan en el dispositivo. En la zona para padres protegida, los adultos eligen el idioma y el modo de juego. La aplicación está pensada para niños en edad preescolar, de unos 5 años.",
@@ -79,9 +79,9 @@
       'info.h': 'Privacidad y contacto', 'priv.t': 'Privacidad', 'priv.d': 'Cómo trata Kalino los datos. Disponible en trece idiomas.', 'priv.go': 'Leer la política de privacidad →', 'con.t': 'Contacto', 'con.d': '¿Preguntas o deseos sobre la aplicación? Escríbenos un correo.', 'foot.priv': 'Privacidad'
     },
     nl: {
-      title: 'Kalino – Audimago', 'meta.desc': 'Kalino is een interactieve adventskalender voor kinderen met 24 deurtjes en een verrassing, voor iPhone en iPad in dertien talen.',
+      title: "Kalino's kabouterhuisje – Audimago", 'meta.desc': 'Kalino is een interactieve adventskalender voor kinderen met 24 deurtjes en een verrassing, voor iPhone en iPad in dertien talen.',
       'nav.aria': 'Hoofdnavigatie', 'nav.desc': 'Beschrijving', 'nav.shots': 'Impressie', 'nav.devices': 'Apparaten', 'nav.langs': 'Talen', 'nav.info': 'Privacy & contact', 'ui.language': 'Taal',
-      name: 'Kalino', 'hero.alt': 'Kalino, de kleine kabouter met rode muts, lantaarn en adventskalender', 'hero.lead': 'De interactieve adventskalender voor kinderen', 'hero.more': 'Meer weten',
+      name: "Kalino's kabouterhuisje", 'hero.alt': 'Kalino, de kleine kabouter met rode muts, lantaarn en adventskalender', 'hero.lead': "Adventskalender voor kinderen", 'hero.more': 'Meer weten',
       fact1: '24 deurtjes + een verrassing', fact2: 'Geen reclame', fact3: 'Geen gebruikersaccount', fact4: 'Gegevens blijven op het apparaat',
       'desc.h': 'Beschrijving',
       'desc.p1': "Kabouter Kalino nodigt kinderen uit om samen de advent te beleven. Achter 24 deurtjes wachten liefdevol gemaakte spelletjes, kleine puzzels en creatieve opdrachten om ontdekt te worden. Kinderen tikken, vegen en slepen, en met elke opdracht die lukt wordt Kalino's huisje iets gezelliger. Wat er achter deurtje 25 zit, blijft een verrassing. Kalino werkt zonder reclame en zonder gebruikersaccount, en alle gegevens blijven op het apparaat. In het beveiligde oudergedeelte stellen volwassenen de taal en de spelmodus in. De app is bedoeld voor kinderen in de kleuterleeftijd, rond 5 jaar.",
@@ -98,9 +98,9 @@
       'info.h': 'Privacy & contact', 'priv.t': 'Privacy', 'priv.d': 'Hoe Kalino met gegevens omgaat. In dertien talen te lezen.', 'priv.go': 'Privacyverklaring lezen →', 'con.t': 'Contact', 'con.d': 'Vragen of wensen over de app? Stuur ons een e-mail.', 'foot.priv': 'Privacy'
     },
     'pt-PT': {
-      title: 'Kalino – Audimago', 'meta.desc': 'O Kalino é um calendário do Advento interativo para crianças, com 24 portinhas e uma surpresa, para iPhone e iPad em treze idiomas.',
+      title: "A casinha do Kalino – Audimago", 'meta.desc': 'O Kalino é um calendário do Advento interativo para crianças, com 24 portinhas e uma surpresa, para iPhone e iPad em treze idiomas.',
       'nav.aria': 'Navegação principal', 'nav.desc': 'Descrição', 'nav.shots': 'Imagens', 'nav.devices': 'Dispositivos', 'nav.langs': 'Idiomas', 'nav.info': 'Privacidade e contacto', 'ui.language': 'Idioma',
-      name: 'Kalino', 'hero.alt': 'O Kalino, o pequeno duende de gorro vermelho, com uma lanterna e um calendário do Advento', 'hero.lead': 'O calendário do Advento interativo para crianças', 'hero.more': 'Saber mais',
+      name: "A casinha do Kalino", 'hero.alt': 'O Kalino, o pequeno duende de gorro vermelho, com uma lanterna e um calendário do Advento', 'hero.lead': "Calendário do Advento infantil", 'hero.more': 'Saber mais',
       fact1: '24 portinhas + uma surpresa', fact2: 'Sem publicidade', fact3: 'Sem conta de utilizador', fact4: 'Os dados ficam no dispositivo',
       'desc.h': 'Descrição',
       'desc.p1': "O duende Kalino convida as crianças a viver o Advento em conjunto. Atrás de 24 portinhas, jogos feitos com carinho, pequenos desafios e atividades criativas esperam para ser descobertos. As crianças tocam, deslizam e arrastam, e a cada tarefa concluída a casinha do Kalino fica um pouco mais acolhedora. O que se esconde na portinha 25 continua a ser uma surpresa. O Kalino não tem publicidade nem conta de utilizador, e todos os dados ficam no dispositivo. Na área dos pais protegida, os adultos escolhem o idioma e o modo de jogo. A aplicação foi pensada para crianças em idade pré-escolar, por volta dos 5 anos.",
@@ -117,9 +117,9 @@
       'info.h': 'Privacidade e contacto', 'priv.t': 'Privacidade', 'priv.d': 'Como o Kalino trata os dados. Disponível em treze idiomas.', 'priv.go': 'Ler a política de privacidade →', 'con.t': 'Contacto', 'con.d': 'Dúvidas ou desejos sobre a aplicação? Envie-nos um e-mail.', 'foot.priv': 'Privacidade'
     },
     it: {
-      title: 'Kalino – Audimago', 'meta.desc': "Kalino è un calendario dell'Avvento interattivo per bambini con 24 finestrelle e una sorpresa, per iPhone e iPad in tredici lingue.",
+      title: "La casetta di Kalino – Audimago", 'meta.desc': "Kalino è un calendario dell'Avvento interattivo per bambini con 24 finestrelle e una sorpresa, per iPhone e iPad in tredici lingue.",
       'nav.aria': 'Navigazione principale', 'nav.desc': 'Descrizione', 'nav.shots': 'Anteprime', 'nav.devices': 'Dispositivi', 'nav.langs': 'Lingue', 'nav.info': 'Privacy e contatti', 'ui.language': 'Lingua',
-      name: 'Kalino', 'hero.alt': "Kalino, il piccolo elfo con il cappello rosso, la lanterna e il calendario dell'Avvento", 'hero.lead': "Il calendario dell'Avvento interattivo per bambini", 'hero.more': 'Scopri di più',
+      name: "La casetta di Kalino", 'hero.alt': "Kalino, il piccolo elfo con il cappello rosso, la lanterna e il calendario dell'Avvento", 'hero.lead': "Calendario d’Avvento bambini", 'hero.more': 'Scopri di più',
       fact1: '24 finestrelle + una sorpresa', fact2: 'Senza pubblicità', fact3: 'Nessun account utente', fact4: 'I dati restano sul dispositivo',
       'desc.h': 'Descrizione',
       'desc.p1': "L'elfo Kalino invita i bambini a vivere insieme l'Avvento. Dietro 24 finestrelle, giochi curati con amore, piccoli rompicapi e attività creative aspettano di essere scoperti. I bambini toccano, scorrono e trascinano, e a ogni compito completato la casetta di Kalino diventa un po' più accogliente. Cosa si nasconde nella finestrella 25 resta una sorpresa. Kalino non ha pubblicità né account utente, e tutti i dati restano sul dispositivo. Nell'area genitori protetta gli adulti scelgono la lingua e la modalità di gioco. L'app è pensata per bambini in età prescolare, intorno ai 5 anni.",
@@ -136,9 +136,9 @@
       'info.h': 'Privacy e contatti', 'priv.t': 'Privacy', 'priv.d': 'Come Kalino tratta i dati. Da leggere in tredici lingue.', 'priv.go': "Leggi l'informativa sulla privacy →", 'con.t': 'Contatti', 'con.d': "Domande o desideri sull'app? Scrivici un'e-mail.", 'foot.priv': 'Privacy'
     },
     pl: {
-      title: 'Kalino – Audimago', 'meta.desc': "Kalino to interaktywny kalendarz adwentowy dla dzieci z 24 okienkami i niespodzianką, na iPhone'a i iPada w trzynastu językach.",
+      title: "Skrzat Kalino – Audimago", 'meta.desc': "Kalino to interaktywny kalendarz adwentowy dla dzieci z 24 okienkami i niespodzianką, na iPhone'a i iPada w trzynastu językach.",
       'nav.aria': 'Nawigacja główna', 'nav.desc': 'Opis', 'nav.shots': 'Podgląd', 'nav.devices': 'Urządzenia', 'nav.langs': 'Języki', 'nav.info': 'Prywatność i kontakt', 'ui.language': 'Język',
-      name: 'Kalino', 'hero.alt': 'Kalino, mały skrzat w czerwonej czapce z latarnią i kalendarzem adwentowym', 'hero.lead': 'Interaktywny kalendarz adwentowy dla dzieci', 'hero.more': 'Dowiedz się więcej',
+      name: "Skrzat Kalino", 'hero.alt': 'Kalino, mały skrzat w czerwonej czapce z latarnią i kalendarzem adwentowym', 'hero.lead': "Kalendarz adwentowy dla dzieci", 'hero.more': 'Dowiedz się więcej',
       fact1: '24 okienka + niespodzianka', fact2: 'Bez reklam', fact3: 'Bez konta użytkownika', fact4: 'Dane zostają na urządzeniu',
       'desc.h': 'Opis',
       'desc.p1': "Skrzat Kalino zaprasza dzieci do wspólnego przeżywania Adwentu. Za 24 okienkami czekają na odkrycie starannie przygotowane gry, małe zagadki i kreatywne zadania. Dzieci stukają, przesuwają i przeciągają, a z każdym ukończonym zadaniem domek Kalina staje się trochę przytulniejszy. To, co kryje się za okienkiem 25, pozostaje niespodzianką. Kalino działa bez reklam i bez konta użytkownika, a wszystkie dane zostają na urządzeniu. W zabezpieczonej strefie rodzica dorośli wybierają język i tryb gry. Aplikacja jest przeznaczona dla dzieci w wieku przedszkolnym, około 5 lat.",
@@ -155,9 +155,9 @@
       'info.h': 'Prywatność i kontakt', 'priv.t': 'Prywatność', 'priv.d': 'Jak Kalino obchodzi się z danymi. Do przeczytania w trzynastu językach.', 'priv.go': 'Przeczytaj politykę prywatności →', 'con.t': 'Kontakt', 'con.d': 'Pytania lub życzenia dotyczące aplikacji? Napisz do nas e-mail.', 'foot.priv': 'Prywatność'
     },
     da: {
-      title: 'Kalino – Audimago', 'meta.desc': 'Kalino er en interaktiv julekalender for børn med 24 låger og en overraskelse, til iPhone og iPad på tretten sprog.',
+      title: "Kalinos nissehus – Audimago", 'meta.desc': 'Kalino er en interaktiv julekalender for børn med 24 låger og en overraskelse, til iPhone og iPad på tretten sprog.',
       'nav.aria': 'Hovednavigation', 'nav.desc': 'Beskrivelse', 'nav.shots': 'Indblik', 'nav.devices': 'Enheder', 'nav.langs': 'Sprog', 'nav.info': 'Privatliv og kontakt', 'ui.language': 'Sprog',
-      name: 'Kalino', 'hero.alt': 'Kalino, den lille nisse med rød hue, lanterne og julekalender', 'hero.lead': 'Den interaktive julekalender for børn', 'hero.more': 'Læs mere',
+      name: "Kalinos nissehus", 'hero.alt': 'Kalino, den lille nisse med rød hue, lanterne og julekalender', 'hero.lead': "Julekalender for børn", 'hero.more': 'Læs mere',
       fact1: '24 låger + en overraskelse', fact2: 'Ingen reklamer', fact3: 'Ingen brugerkonto', fact4: 'Data bliver på enheden',
       'desc.h': 'Beskrivelse',
       'desc.p1': "Nissen Kalino inviterer børn til at opleve juletiden sammen. Bag 24 låger venter kærligt udformede spil, små gåder og kreative opgaver på at blive opdaget. Børnene trykker, stryger og trækker, og for hver opgave, de klarer, bliver Kalinos stue en smule hyggeligere. Hvad der gemmer sig bag låge 25, forbliver en overraskelse. Kalino kommer uden reklamer og uden brugerkonto, og alle data bliver på enheden. I det beskyttede forælderområde vælger voksne sprog og spiltilstand. Appen er lavet til børn i førskolealderen, omkring 5 år.",
@@ -174,9 +174,9 @@
       'info.h': 'Privatliv og kontakt', 'priv.t': 'Privatliv', 'priv.d': 'Sådan håndterer Kalino data. Kan læses på tretten sprog.', 'priv.go': 'Læs privatlivserklæringen →', 'con.t': 'Kontakt', 'con.d': 'Spørgsmål eller ønsker til appen? Send os en e-mail.', 'foot.priv': 'Privatliv'
     },
     sv: {
-      title: 'Kalino – Audimago', 'meta.desc': 'Kalino är en interaktiv adventskalender för barn med 24 luckor och en överraskning, för iPhone och iPad på tretton språk.',
+      title: "Kalinos tomtestuga – Audimago", 'meta.desc': 'Kalino är en interaktiv adventskalender för barn med 24 luckor och en överraskning, för iPhone och iPad på tretton språk.',
       'nav.aria': 'Huvudnavigering', 'nav.desc': 'Beskrivning', 'nav.shots': 'Inblick', 'nav.devices': 'Enheter', 'nav.langs': 'Språk', 'nav.info': 'Integritet och kontakt', 'ui.language': 'Språk',
-      name: 'Kalino', 'hero.alt': 'Kalino, den lilla tomten med röd luva, lykta och adventskalender', 'hero.lead': 'Den interaktiva adventskalendern för barn', 'hero.more': 'Läs mer',
+      name: "Kalinos tomtestuga", 'hero.alt': 'Kalino, den lilla tomten med röd luva, lykta och adventskalender', 'hero.lead': "Julkalender för barn", 'hero.more': 'Läs mer',
       fact1: '24 luckor + en överraskning', fact2: 'Ingen reklam', fact3: 'Inget användarkonto', fact4: 'Uppgifterna stannar på enheten',
       'desc.h': 'Beskrivning',
       'desc.p1': "Tomten Kalino bjuder in barn att uppleva advent tillsammans. Bakom 24 luckor väntar kärleksfullt gjorda spel, små klurigheter och kreativa uppgifter på att upptäckas. Barnen trycker, drar och sveper, och för varje uppgift de klarar blir Kalinos stuga lite mysigare. Vad som finns bakom lucka 25 förblir en överraskning. Kalino har ingen reklam och inget användarkonto, och alla uppgifter stannar på enheten. I det skyddade föräldraområdet väljer vuxna språk och spelläge. Appen är gjord för barn i förskoleåldern, omkring 5 år.",
@@ -193,9 +193,9 @@
       'info.h': 'Integritet och kontakt', 'priv.t': 'Integritet', 'priv.d': 'Så hanterar Kalino uppgifter. Kan läsas på tretton språk.', 'priv.go': 'Läs integritetspolicyn →', 'con.t': 'Kontakt', 'con.d': 'Frågor eller önskemål om appen? Skicka ett mejl till oss.', 'foot.priv': 'Integritet'
     },
     nb: {
-      title: 'Kalino – Audimago', 'meta.desc': 'Kalino er en interaktiv julekalender for barn med 24 luker og en overraskelse, for iPhone og iPad på tretten språk.',
+      title: "Kalinos nissehus – Audimago", 'meta.desc': 'Kalino er en interaktiv julekalender for barn med 24 luker og en overraskelse, for iPhone og iPad på tretten språk.',
       'nav.aria': 'Hovednavigasjon', 'nav.desc': 'Beskrivelse', 'nav.shots': 'Innblikk', 'nav.devices': 'Enheter', 'nav.langs': 'Språk', 'nav.info': 'Personvern og kontakt', 'ui.language': 'Språk',
-      name: 'Kalino', 'hero.alt': 'Kalino, den lille nissen med rød lue, lykt og julekalender', 'hero.lead': 'Den interaktive julekalenderen for barn', 'hero.more': 'Les mer',
+      name: "Kalinos nissehus", 'hero.alt': 'Kalino, den lille nissen med rød lue, lykt og julekalender', 'hero.lead': "Julekalender for barn", 'hero.more': 'Les mer',
       fact1: '24 luker + en overraskelse', fact2: 'Ingen reklame', fact3: 'Ingen brukerkonto', fact4: 'Dataene blir på enheten',
       'desc.h': 'Beskrivelse',
       'desc.p1': "Nissen Kalino inviterer barn til å oppleve julen sammen. Bak 24 luker venter kjærlig utformede spill, små gåter og kreative oppgaver på å bli oppdaget. Barna trykker, sveiper og drar, og for hver oppgave de klarer, blir Kalinos stue litt koseligere. Hva som skjuler seg bak luke 25, forblir en overraskelse. Kalino kommer uten reklame og uten brukerkonto, og alle data blir på enheten. I det beskyttede foreldreområdet velger voksne språk og spillmodus. Appen er laget for barn i barnehagealder, rundt 5 år.",
@@ -212,9 +212,9 @@
       'info.h': 'Personvern og kontakt', 'priv.t': 'Personvern', 'priv.d': 'Slik behandler Kalino data. Kan leses på tretten språk.', 'priv.go': 'Les personvernerklæringen →', 'con.t': 'Kontakt', 'con.d': 'Spørsmål eller ønsker om appen? Send oss en e-post.', 'foot.priv': 'Personvern'
     },
     fi: {
-      title: 'Kalino – Audimago', 'meta.desc': 'Kalino on vuorovaikutteinen joulukalenteri lapsille: 24 luukkua ja yllätys, iPhonelle ja iPadille kolmellatoista kielellä.',
+      title: "Kalinon tonttutalo – Audimago", 'meta.desc': 'Kalino on vuorovaikutteinen joulukalenteri lapsille: 24 luukkua ja yllätys, iPhonelle ja iPadille kolmellatoista kielellä.',
       'nav.aria': 'Päänavigointi', 'nav.desc': 'Kuvaus', 'nav.shots': 'Kurkistus', 'nav.devices': 'Laitteet', 'nav.langs': 'Kielet', 'nav.info': 'Tietosuoja ja yhteystiedot', 'ui.language': 'Kieli',
-      name: 'Kalino', 'hero.alt': 'Kalino, pieni tonttu punaisessa lakissa, lyhty ja joulukalenteri', 'hero.lead': 'Vuorovaikutteinen joulukalenteri lapsille', 'hero.more': 'Lue lisää',
+      name: "Kalinon tonttutalo", 'hero.alt': 'Kalino, pieni tonttu punaisessa lakissa, lyhty ja joulukalenteri', 'hero.lead': "Joulukalenteri lapsille", 'hero.more': 'Lue lisää',
       fact1: '24 luukkua + yllätys', fact2: 'Ei mainoksia', fact3: 'Ei käyttäjätiliä', fact4: 'Tiedot pysyvät laitteella',
       'desc.h': 'Kuvaus',
       'desc.p1': "Tonttu Kalino kutsuu lapset viettämään adventtia yhdessä. 24 luukun takana odottaa löydettäväksi rakkaudella tehtyjä pelejä, pieniä pulmia ja luovia tehtäviä. Lapset napauttavat, pyyhkäisevät ja vetävät, ja jokaisen onnistuneen tehtävän myötä Kalinon tupa muuttuu hieman kodikkaammaksi. Se, mitä luukussa 25 piilee, jää yllätykseksi. Kalino toimii ilman mainoksia ja käyttäjätiliä, ja kaikki tiedot pysyvät laitteella. Suojatussa vanhempien alueessa aikuiset valitsevat kielen ja pelitilan. Sovellus on tarkoitettu esikouluikäisille, noin 5-vuotiaille.",
@@ -231,9 +231,9 @@
       'info.h': 'Tietosuoja ja yhteystiedot', 'priv.t': 'Tietosuoja', 'priv.d': 'Näin Kalino käsittelee tietoja. Luettavissa kolmellatoista kielellä.', 'priv.go': 'Lue tietosuojaseloste →', 'con.t': 'Yhteystiedot', 'con.d': 'Kysyttävää tai toiveita sovelluksesta? Lähetä meille sähköpostia.', 'foot.priv': 'Tietosuoja'
     },
     el: {
-      title: 'Kalino – Audimago', 'meta.desc': 'Το Kalino είναι ένα διαδραστικό χριστουγεννιάτικο ημερολόγιο για παιδιά με 24 πορτάκια και μια έκπληξη, για iPhone και iPad σε δεκατρείς γλώσσες.',
+      title: "Το σπιτάκι του Kalino – Audimago", 'meta.desc': 'Το Kalino είναι ένα διαδραστικό χριστουγεννιάτικο ημερολόγιο για παιδιά με 24 πορτάκια και μια έκπληξη, για iPhone και iPad σε δεκατρείς γλώσσες.',
       'nav.aria': 'Κύρια πλοήγηση', 'nav.desc': 'Περιγραφή', 'nav.shots': 'Στιγμιότυπα', 'nav.devices': 'Συσκευές', 'nav.langs': 'Γλώσσες', 'nav.info': 'Απόρρητο και επικοινωνία', 'ui.language': 'Γλώσσα',
-      name: 'Kalino', 'hero.alt': 'Ο Kalino, το μικρό ξωτικό με το κόκκινο σκουφί, το φανάρι και το χριστουγεννιάτικο ημερολόγιο', 'hero.lead': 'Το διαδραστικό χριστουγεννιάτικο ημερολόγιο για παιδιά', 'hero.more': 'Μάθε περισσότερα',
+      name: "Το σπιτάκι του Kalino", 'hero.alt': 'Ο Kalino, το μικρό ξωτικό με το κόκκινο σκουφί, το φανάρι και το χριστουγεννιάτικο ημερολόγιο', 'hero.lead': "Ημερολόγιο Advent για παιδιά", 'hero.more': 'Μάθε περισσότερα',
       fact1: '24 πορτάκια + μια έκπληξη', fact2: 'Χωρίς διαφημίσεις', fact3: 'Χωρίς λογαριασμό χρήστη', fact4: 'Τα δεδομένα μένουν στη συσκευή',
       'desc.h': 'Περιγραφή',
       'desc.p1': "Το ξωτικό Kalino προσκαλεί τα παιδιά να ζήσουν μαζί τον Δεκέμβριο των Χριστουγέννων. Πίσω από 24 πορτάκια περιμένουν να ανακαλυφθούν προσεγμένα παιχνίδια, μικροί γρίφοι και δημιουργικές δραστηριότητες. Τα παιδιά πατούν, σύρουν και μεταφέρουν, και με κάθε δραστηριότητα που ολοκληρώνουν το σπιτάκι του Kalino γίνεται λίγο πιο ζεστό. Το τι κρύβεται στο 25ο πορτάκι μένει έκπληξη. Το Kalino λειτουργεί χωρίς διαφημίσεις και χωρίς λογαριασμό χρήστη, και όλα τα δεδομένα μένουν στη συσκευή. Στην προστατευμένη περιοχή γονέων οι ενήλικες επιλέγουν γλώσσα και τρόπο παιχνιδιού. Η εφαρμογή απευθύνεται σε παιδιά προσχολικής ηλικίας, περίπου 5 ετών.",
