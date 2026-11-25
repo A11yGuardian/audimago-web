@@ -30,6 +30,8 @@ Das Karussell bleibt verborgen, solange `screenshots/manifest.json` keine Eintr�
 
 `width` und `height` (Pixel) verhindern Sprünge beim Laden. Nach dem Eintrag erscheint der Bereich „Einblicke" automatisch.
 
+Soll ein Bild je nach Sprache anders aussehen (etwa mit Text im Bild), steht `src` für alle Sprachen und `srcByLang` überschreibt es für einzelne, zum Beispiel `"srcByLang": { "de": "screenshots/s05-de.jpg" }`. Die Bildunterschriften der Slides stehen in `i18n.js` als `s1`, `s2` usw. in der Reihenfolge des Manifests.
+
 ## Sprachen der Startseite
 
 `i18n.js` enthält die Texte der Startseite in dreizehn Sprachen (de, en, fr, es, nl, pt-PT, it, pl, da, sv, nb, fi, el). Die Sprache kommt aus `?lang=`, danach aus der letzten Auswahl (Browser-Speicher `kalino-lang`), sonst aus der Browsersprache, sonst Englisch. Deutsch steht zusätzlich im HTML. Die Bildunterschriften des Karussells stehen unter `s1` bis `s7`, in der Reihenfolge der Bilder in `screenshots/manifest.json`.

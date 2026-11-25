@@ -5,7 +5,7 @@
   const root = document.querySelector('#carousel');
   if (!section || !root) return;
 
-  fetch(new URL('../../screenshots/manifest.json?v=202611232030', location.href), { cache: 'no-cache' })
+  fetch(new URL('../../screenshots/manifest.json?v=202611251500', location.href), { cache: 'no-cache' })
     .then(r => (r.ok ? r.json() : null))
     .then(data => {
       const slides = data && Array.isArray(data.slides) ? data.slides.filter(s => s && typeof s.src === 'string') : [];
@@ -38,12 +38,13 @@
     const tr = (key, fallback, vars) => (K ? K.t(key, vars) || fallback : fallback);
     const captionOf = (s, i) => (translated() ? K.t(`s${i + 1}`) : s.caption) || s.caption || '';
     const altOf = (s, i) => (translated() ? K.t(`s${i + 1}`) : s.alt) || s.alt || '';
+    const srcOf = s => new URL((K && s.srcByLang && s.srcByLang[K.lang]) || s.src, new URL('../../', location.href)).href;
     const track = el('ul', { class: 'track', tabindex: '0', 'aria-label': tr('shots.track', 'Einblicke in die App. Mit den Pfeiltasten blättern.') });
     const figs = [];
     slides.forEach((s, i) => {
       const li = el('li', { class: 'slide', role: 'group', 'aria-label': `${i + 1} / ${slides.length}` });
       const fig = el('figure');
-      const img = el('img', { src: new URL(s.src, new URL('../../', location.href)).href, alt: altOf(s, i), loading: i === 0 ? 'eager' : 'lazy', decoding: 'async' });
+      const img = el('img', { src: srcOf(s), alt: altOf(s, i), loading: i === 0 ? 'eager' : 'lazy', decoding: 'async' });
       if (s.width && s.height) { img.setAttribute('width', String(s.width)); img.setAttribute('height', String(s.height)); }
       fig.append(img);
       const cap = el('figcaption', {}, captionOf(s, i));
@@ -93,7 +94,7 @@
       prev.setAttribute('aria-label', tr('shots.prev', 'Vorheriges Bild'));
       next.setAttribute('aria-label', tr('shots.next', 'Nächstes Bild'));
       dotButtons.forEach((b, n) => b.setAttribute('aria-label', tr('shots.dot', `Bild ${n + 1} von ${slides.length}`, { n: n + 1, total: slides.length })));
-      figs.forEach((f, n) => { f.img.setAttribute('alt', altOf(slides[n], n)); f.cap.textContent = captionOf(slides[n], n); });
+      figs.forEach((f, n) => { f.img.setAttribute('src', srcOf(slides[n])); f.img.setAttribute('alt', altOf(slides[n], n)); f.cap.textContent = captionOf(slides[n], n); });
     }
     document.addEventListener('kalino:lang', relabel);
     update();
