@@ -1,20 +1,63 @@
 // Video im iPad: zeigt zuerst das Startbild, startet erst nach Tippen (mit Ton).
 (() => {
-  const v = document.querySelector('#demo');
-  const b = document.querySelector('#demo-play');
-  if (!v || !b) return;
+  const $ = s => document.querySelector(s);
+  const v = $('#demo'), b = $('#demo-play'), knob = $('#demo-knob');
+  if (!v || !b || !knob) return;
+  const needle = knob.querySelector('.needle');
+  const t = k => (window.kalino && window.kalino.t(k)) || 'Lautstärke';
+  // iPhone/iPad erlauben keine Lautstärke per Skript: dort gibt es keinen Regler
+  v.volume = 0.5;
+  if (v.volume !== 0.5) knob.hidden = true;
+  v.volume = 1;
+  const level = () => (v.muted ? 0 : v.volume);
+  const sync = () => {
+    const l = level();
+    needle.style.transform = `rotate(${-135 + l * 270}deg)`;
+    knob.setAttribute('aria-valuenow', String(Math.round(l * 100)));
+    knob.setAttribute('aria-label', t('video.vol'));
+  };
+  const set = l => {
+    l = Math.min(1, Math.max(0, Math.round(l * 20) / 20));
+    v.volume = l;
+    v.muted = l === 0;
+    sync();
+  };
+  // Drehen: Winkel zur Mitte des Reglers (0 = oben, im Uhrzeigersinn), Bereich -135° bis +135°
+  const turn = e => {
+    const r = knob.getBoundingClientRect();
+    let d = Math.atan2(e.clientX - (r.left + r.width / 2), -(e.clientY - (r.top + r.height / 2))) * 180 / Math.PI;
+    if (Math.abs(d) > 135) d = d < 0 ? -135 : 135;
+    set((d + 135) / 270);
+  };
+  let drag = false;
+  knob.addEventListener('pointerdown', e => { drag = true; knob.setPointerCapture(e.pointerId); turn(e); e.preventDefault(); });
+  knob.addEventListener('pointermove', e => { if (drag) turn(e); });
+  const end = () => { drag = false; };
+  knob.addEventListener('pointerup', end);
+  knob.addEventListener('pointercancel', end);
+  knob.addEventListener('wheel', e => { e.preventDefault(); set(level() + (e.deltaY < 0 ? 0.1 : -0.1)); }, { passive: false });
+  knob.addEventListener('keydown', e => {
+    const k = e.key;
+    if (k === 'ArrowUp' || k === 'ArrowRight') set(level() + 0.1);
+    else if (k === 'ArrowDown' || k === 'ArrowLeft') set(level() - 0.1);
+    else if (k === 'Home') set(0);
+    else if (k === 'End') set(1);
+    else return;
+    e.preventDefault();
+  });
+  // Antippen des laufenden Videos stoppt es: zurück auf schwarz, das nächste Play beginnt von vorn
+  const reset = () => { v.pause(); v.load(); b.hidden = false; };
   b.addEventListener('click', () => {
-    v.controls = true;
-    v.muted = false;
+    v.controls = false;
     b.hidden = true;
     const p = v.play();
-    if (p && p.catch) p.catch(() => { b.hidden = false; v.controls = false; });
+    if (p && p.catch) p.catch(reset);
   });
-  v.addEventListener('ended', () => {
-    v.controls = false;
-    v.load();
-    b.hidden = false;
-  });
+  v.addEventListener('click', () => { if (!v.paused) reset(); });
+  v.addEventListener('ended', reset);
+  v.addEventListener('volumechange', sync);
+  document.addEventListener('kalino:lang', sync);
+  sync();
 })();
 
 // Bildschirm des iPads im Bild (2000 px breit): oben links, oben rechts, unten rechts, unten links.

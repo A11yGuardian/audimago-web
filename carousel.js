@@ -5,7 +5,7 @@
   const root = document.querySelector('#carousel');
   if (!section || !root) return;
 
-  fetch(new URL('../../screenshots/manifest.json?v=202611251500', location.href), { cache: 'no-cache' })
+  fetch(new URL('../../screenshots/manifest.json?v=202611260310', location.href), { cache: 'no-cache' })
     .then(r => (r.ok ? r.json() : null))
     .then(data => {
       const slides = data && Array.isArray(data.slides) ? data.slides.filter(s => s && typeof s.src === 'string') : [];
@@ -37,8 +37,13 @@
     const translated = () => !!K && K.lang !== 'de';
     const tr = (key, fallback, vars) => (K ? K.t(key, vars) || fallback : fallback);
     const captionOf = (s, i) => (translated() ? K.t(`s${i + 1}`) : s.caption) || s.caption || '';
+    const noteOf = (s, i) => (translated() ? K.t(`s${i + 1}n`) : s.note) || '';
     const altOf = (s, i) => (translated() ? K.t(`s${i + 1}`) : s.alt) || s.alt || '';
-    const srcOf = s => new URL((K && s.srcByLang && s.srcByLang[K.lang]) || s.src, new URL('../../', location.href)).href;
+    const srcOf = s => {
+      const u = new URL((K && s.srcByLang && s.srcByLang[K.lang]) || s.src, new URL('../../', location.href));
+      u.searchParams.set('v', '202611260310'); // neue Bildfassung erzwingen
+      return u.href;
+    };
     const track = el('ul', { class: 'track', tabindex: '0', 'aria-label': tr('shots.track', 'Einblicke in die App. Mit den Pfeiltasten blättern.') });
     const figs = [];
     slides.forEach((s, i) => {
@@ -49,7 +54,10 @@
       fig.append(img);
       const cap = el('figcaption', {}, captionOf(s, i));
       fig.append(cap);
-      figs.push({ img, cap });
+      const note = el('p', { class: 'slide-note' }, noteOf(s, i));
+      note.hidden = !note.textContent;
+      cap.append(note);
+      figs.push({ img, cap, note });
       li.append(fig);
       track.append(li);
     });
@@ -94,7 +102,7 @@
       prev.setAttribute('aria-label', tr('shots.prev', 'Vorheriges Bild'));
       next.setAttribute('aria-label', tr('shots.next', 'Nächstes Bild'));
       dotButtons.forEach((b, n) => b.setAttribute('aria-label', tr('shots.dot', `Bild ${n + 1} von ${slides.length}`, { n: n + 1, total: slides.length })));
-      figs.forEach((f, n) => { f.img.setAttribute('src', srcOf(slides[n])); f.img.setAttribute('alt', altOf(slides[n], n)); f.cap.textContent = captionOf(slides[n], n); });
+      figs.forEach((f, n) => { f.img.setAttribute('src', srcOf(slides[n])); f.img.setAttribute('alt', altOf(slides[n], n)); f.cap.firstChild.textContent = captionOf(slides[n], n); f.note.textContent = noteOf(slides[n], n); f.note.hidden = !f.note.textContent; });
     }
     document.addEventListener('kalino:lang', relabel);
     update();

@@ -226,5 +226,54 @@ footer a { color: var(--muted); }
 
 /* Perspektive: JavaScript kippt die Bildschirmfläche passend zum schräg stehenden iPad */
 .tablet.warp .screen { left: 0; top: 0; width: 626px; height: 469px; clip-path: none; background: #000; overflow: hidden; transform-origin: 0 0; will-change: transform; }
-.tablet.warp .play svg { width: 24%; }
+.tablet.warp .play svg { width: 30%; }
 .tablet.warp video { clip-path: inset(5px round 22px); }
+.tablet.warp .play { background: #000; clip-path: inset(5px round 22px); }
+
+/* Geräte: drei große Kacheln (iPhone, iPad, Querformat) */
+.devices { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1rem; }
+.devices .device { flex-direction: column; justify-content: center; text-align: center; gap: 1.2rem; padding: 2.2rem 1.6rem; }
+.devices .device img.ico { width: 8rem; height: 8rem; object-fit: contain; }
+.devices .device h3 { font-size: 1.7rem; margin-bottom: .4rem; }
+.devices .device p { font-size: 1.15rem; }
+.devices .device.landscape { grid-column: 1 / -1; flex-direction: row; text-align: left; justify-content: center; gap: 2rem; padding: 1.8rem 2rem; }
+.devices .device.landscape img.ico { width: 9rem; height: auto; max-height: 6.5rem; }
+.devices .device.landscape .note { margin: 0; color: var(--ink); font-size: 1.2rem; font-weight: 600; max-width: 34rem; }
+@media (max-width: 34rem) {
+  .devices { grid-template-columns: 1fr; }
+  .devices .device { padding: 1.8rem 1.2rem; }
+  .devices .device img.ico { width: 6.5rem; height: 6.5rem; }
+  .devices .device.landscape { flex-direction: column; text-align: center; gap: 1rem; }
+}
+
+/* Lautstärke: Drehregler oben rechts auf dem Bild, außerhalb des Videos */
+.tablet .knob { position: absolute; top: 4%; right: 3.5%; width: 4.6rem; height: 4.6rem; padding: .35rem; border-radius: 50%; background: #2a1608cc; box-shadow: 0 0 0 2px #f7c23b66, 0 .5rem 1.2rem #0006; cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none; line-height: 0; }
+.tablet .knob:active { cursor: grabbing; }
+.tablet .knob[hidden] { display: none; }
+.tablet .knob svg { width: 100%; height: 100%; }
+.tablet .knob:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+@media (max-width: 34rem) { .tablet .knob { width: 3.6rem; height: 3.6rem; padding: .28rem; } }
+
+/* Die Kacheln bleiben oben am Icon-Abschnitt; der Inhalt beginnt darunter. Das Banner steht in der Beschreibung. */
+.wrap + .wrap { margin-top: 2.2rem; }
+/* Banner über die volle Fensterbreite, auch innerhalb der schmaleren Inhaltsspalte */
+.banner-wrap { position: relative; width: 100vw; margin: 2rem 0 2rem calc(50% - 50vw); }
+.banner.in { width: 100%; max-width: none; margin: 0; border-radius: 0; box-shadow: none; }
+body { overflow-x: clip; }
+
+/* Startbuttons: kräftiges Goldgelb #F7C23B wie in den Icons */
+.hero .btn { padding: 1rem 1.7rem; font-size: 1.1rem; border-width: 2px; }
+.hero .btn.primary { background: #F7C23B; color: #2a1a00; font-weight: 800; border: 2px solid #F7C23B; box-shadow: none; }
+.hero .btn.primary:hover { filter: brightness(1.06); box-shadow: none; }
+.hero .btn.ghost { background: transparent; box-shadow: none; color: #F7C23B; font-weight: 750; border: 2px solid #F7C23B; }
+.hero .btn.ghost:hover { background: transparent; box-shadow: none; }
+
+/* Vollständiger Titel in einer Überschrift: Name groß, darunter der Zusatz */
+.hero h1 .sub { display: block; margin: .7rem 0 0; font-size: clamp(1.15rem, 3.4vw, 1.5rem); font-weight: 650; letter-spacing: 0; line-height: 1.3; max-width: 24ch; -webkit-text-fill-color: #e4eafa; color: #e4eafa; }
+.hero:not(.small) .hero-text h1 + .actions, .hero .hero-text h1 + .actions { margin-top: 1.8rem; }
+@media (max-width: 44rem) { .hero:not(.small) .hero-text h1 .sub { margin-inline: auto; } }
+
+
+/* Zweite Zeile unter der Bildbeschreibung (Aufgabe und Hinweis) */
+.slide-note { margin: .3rem 0 0; font-weight: 500; font-size: .95em; color: var(--muted); }
+.slide-note[hidden] { display: none; }
