@@ -81,8 +81,6 @@ select option { color: #1f2a44; background: #fff; }
 footer { width: min(100% - 2rem, 64rem); margin: 3rem auto 0; padding: 1.4rem 0 2.4rem; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: .6rem 1.4rem; justify-content: space-between; color: var(--muted); font-size: .92rem; }
 footer a { color: var(--muted); }
 
-@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
-@media (prefers-reduced-motion: no-preference) { .hero img.icon { animation: float 6s ease-in-out infinite; } }
 @media (max-width: 36rem) { .bar .in { min-height: 3.2rem; } .bar label span { display: none; } .hero { padding-top: 3rem; padding-bottom: 7rem; } }
 
 /* Landing Page */
@@ -282,6 +280,5 @@ body { overflow-x: clip; }
 .bar label { gap: 1.1rem; }
 @media (max-width: 36rem) { .bar .in { min-height: 4rem; } }
 
-/* Datenschutz, Impressum, Support: Icon steht still und die Seite behält ihre Breite, damit beim Sprachwechsel nichts springt */
-.hero.small img.icon { animation: none; transform: none; }
+/* Die Seite behält ihre Breite, damit beim Sprachwechsel nichts springt */
 html { scrollbar-gutter: stable; }
